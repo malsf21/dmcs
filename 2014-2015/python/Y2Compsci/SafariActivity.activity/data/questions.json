@@ -1,0 +1,110 @@
+{
+    "1": {
+        "category": "Geography",
+        "question": "What is the capital of Kenya?",
+        "answers": [
+            "Nairobi",
+            "Dodoma",
+            "Zanzibar",
+            "Dar Es Salaam",
+            "Khartoum"
+        ],
+        "answer": "0"
+    },
+    "2": {
+        "category": "Geography",
+        "question": "Lewa is located in which part of Kenya?",
+        "answers": [
+            "Central",
+            "North",
+            "East",
+            "South",
+            "West"
+        ],
+        "answer": "1"
+    },
+    "3": {
+        "category": "History",
+        "question": "When was Lewa founded?",
+        "answers": [
+            "1920",
+            "1983",
+            "1950",
+            "1890",
+            "2002"
+        ],
+        "answer": "1"
+    },
+    "4": {
+        "category": "Conservation",
+        "question": "Lewa contains _____ percent of the black Rhinos in Kenya",
+        "answers": [
+            "50%",
+            "35%",
+            "20%",
+            "11%",
+            "5%"
+        ],
+        "answer": "3"
+    },
+    "5": {
+        "category": "Species",
+        "question": "Tall species of zebra with rounded ears and thin elegant stripes",
+        "answers": [
+            "Plains",
+            "Upper",
+            "Grevy",
+            "Kenyan",
+            "Upland"
+        ],
+        "answer": "2"
+    },
+    "6": {
+        "category": "Conservation",
+        "question": "Lewa has approximately ___ black rhinos",
+        "answers": [
+            "500",
+            "120",
+            "72",
+            "50",
+            "32"
+        ],
+        "answer": "2"
+    },
+    "7": {
+        "category": "Conservation",
+        "question": "The greatest threat faced by wild rhinos in Africa is",
+        "answers": [
+            "Lion predation",
+            "Inbreeding",
+            "Human poachers",
+            "Hyena gangs",
+            "Not enough breeding pairs"
+        ],
+        "answer": "2"
+    },
+    "8": {
+        "category": "Species",
+        "question": "The white rhino is so called because",
+        "answers": [
+            "White rhinos have a distinctive white patch on their underbellies",
+            "White rhinos are lighter in colour than black rhinos",
+            "The white rhino was named after Dr. John White a British scientist in the 1800s",
+            "The white rhino have lighter coloured horns than the black rhinos",
+            "Mistranslation of the Afrikaans word wide - referring to their wide lips for grazing"
+        ],
+        "answer": "4"
+    },
+    "9": {
+        "category": "History",
+        "question": "In 2013, Lewa was recognized with this prestigious award",
+        "answers": [
+            "Kenyan conservation area of the year",
+            "UNESCO extended the boundaries of the Mount Kenya World Heritage Site to include Lewa",
+            "Queen Elizabeth knighted Lewa CEO Mike Watson for his conservation work",
+            "The king of Kenya, Goodluck Jonathan, presented Mike Watson with the order of Kenya",
+            "Commonwealth of African nations awarded Lewa a gold star rating for eco-tourism"
+        ],
+        "answer": "1"
+    }
+}

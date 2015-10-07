@@ -1,0 +1,28 @@
+
+
+# Function to open a file, populate a list and return
+def openfile(filename):
+	inFile = open(filename,'r')
+	listFriends = []
+	for friend in inFile:
+		listFriends.append(friend.strip())
+	inFile.close()
+	return listFriends
+
+# Sub-routine to write out friends list and close file
+def write_to_file(filename,list):
+	outFile = open(filename,'w')
+	for name in list:
+		outFile.write(name + '\n')
+	outFile.close()
+
+# Call open file and populate a friends list
+file = 'friends.txt'
+friendsList = openfile(file)
+
+# Add another name
+name = raw_input("Enter a friend's name: ")
+friendsList.append(name)
+
+# Call the close sub routine
+write_to_file(file,friendsList)

@@ -1,0 +1,6 @@
+[Activity]
+name = SafariActivity
+bundle_id = org.sugarlabs.SafariActivity
+exec = sugar-activity SafariActivity.SafariActivity
+icon = activity-generic
+activity_version = 1
