@@ -1,0 +1,16 @@
+@font-face{
+	font-family:Nexa;
+	src:url(fonts/nexa_light.otf);
+}
+@font-face{
+	font-family:Nexa;
+	font-weight:bold;
+	src:url(fonts/nexa_bold.otf);
+}
+body{
+	font-family:Nexa;
+	padding-top:70px;
+	padding-bottom:70px;
+	background-color:#2a262a;
+	color:#FFFFFF;
+}
