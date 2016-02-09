@@ -14,3 +14,11 @@ body {
 		position: relative;
 		text-align: center;
 }
+.section{
+	padding-top:50px;
+	padding-bottom:50px;
+}
+.footer{
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
