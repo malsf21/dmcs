@@ -22,3 +22,9 @@ body {
 	padding-top: 30px;
 	padding-bottom: 20px;
 }
+.section a{
+	text-decoration: underline;
+}
+.link-normal a{
+	color:inherit;
+}
