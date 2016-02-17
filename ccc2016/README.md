@@ -2,6 +2,8 @@
 
 This was the 2016 competition. I wrote the junior portion, but since I finished early I tried to tackle problem 5 of the senior (which I think I did successfully.)
 
+Junior 5 & Senior 2 were the same problem.
+
 I'll update y'all on the score I got soon.
 
 ## Thoughts and Tips
