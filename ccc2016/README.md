@@ -6,6 +6,8 @@ The scorer gave me 75/75, though fixing J4 was a struggle.
 
 __The fourth problem is one I redid, since the scorer gave me it wrong. Everything else passed on the first try.__
 
+Junior 5 & Senior 2 were the same problem.
+
 ## Thoughts and Tips
 * Junior was actually pretty easy, just got to study.
 * I'm pretty happy that I downloaded the Python Docs, pdf style. I suggest you do as well.
