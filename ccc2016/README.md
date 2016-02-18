@@ -2,7 +2,9 @@
 
 This was the 2016 competition. I wrote the junior portion, but since I finished early I tried to tackle problem 5 of the senior (which I think I did successfully.)
 
-I'll update y'all on the score I got soon.
+The scorer gave me 75/75, though fixing J4 was a struggle.
+
+__The fourth problem is one I redid, since the scorer gave me it wrong. Everything else passed on the first try.__
 
 ## Thoughts and Tips
 * Junior was actually pretty easy, just got to study.
