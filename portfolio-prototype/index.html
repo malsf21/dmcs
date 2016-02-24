@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/style.css" />
+		<style>
+			.carousel-control.left, .carousel-control.right {
+			    background-image: none
+			}
+		</style>
   </head>
   <body data-spy="scroll" data-target="#navbar-container">
 		<div id="navbar-container">
@@ -77,10 +82,9 @@
 						<p class="card-text"><b>2014-2015</b> McGill 1st Jr. Speaker, Jr. Champion; Junior Provincials 4th Speaker; Junior Nationals 12th Speaker; Hart House 2nd Jr. Speaker</p>
 				  </div>
 				  <div class="card card-block">
-				    <blockquote class="card-blockquote">
-				      <h4 class="card-title">UCC DECA</h4>
-							<p class="card-text"><b>2015-2016 (HLM)</b> Regionals 1st Overall, Provincials Top 15 Exam
-							<p class="card-text"><b>2014-2015 (HLM)</b> Regionals 2nd Overall
+			      <h4 class="card-title">UCC DECA</h4>
+						<p class="card-text"><b>2015-2016 (HLM)</b> Regionals 1st Overall, Provincials Top 15 Exam
+						<p class="card-text"><b>2014-2015 (HLM)</b> Regionals 2nd Overall
 				  </div>
 					<div class="card card-block card-inverse card-danger">
 						<h4 class="card-title">Reach For The Top</h4>
@@ -106,14 +110,17 @@
 				    <h4 class="card-title">World Affairs Conference</h4>
 				    <p class="card-text"><b>WAC 2016</b> Head of Technology, Lead Website Developer, Registration & Media Correspondent</p>
 						<p class="card-text"><b>WAC 2015</b> Head of A/V, Registration & Media Correspondent</p>
-						<p class="card-text"><a href="http://world.ac" class="card-link"><small>You can visit the website here</small></a></p>
+						<p class="card-text"><a href="http://world.ac" class="card-link" target="_blank"><small>You can visit the website here</small></a></p>
 				  </div>
 					<div class="card card-block card-inverse card-primary">
 				    <h4 class="card-title">UCC Model United Nations</h4>
-						<p class="card-text"><b>2012-Present</b> Undefeated Delegation (Best delegation at every attended conference)</p>
+						<p class="card-text"><b>2012-Present</b> Undefeated Delegation</p>
 						<p class="card-text"><b>2015-2016</b> SSUNS Best Delegate, HMUN Honourable Mention</p>
-						<p class="card-text"><b>2014-2015</b> SSUNS Outstanding Delegate, CMUNCE Honourable Mention, BMUN Oustanding Delegate</p>
+						<p class="card-text"><b>2014-2015</b> SSUNS Outstanding Delegate, BMUN Oustanding Delegate</p>
 				  </div>
+					<div class="card card-block">
+						<h4 class="card-title">SHAD 2016 Participant</h4>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -122,14 +129,85 @@
 			<div class="container">
 				<h1 class="display-2">My Projects</h1>
 				</br>
+				<div id="carousel-projects" class="carousel slide link-normal" data-ride="carousel">
+					<!--
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-projects" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-projects" data-slide-to="1"></li>
+				    <li data-target="#carousel-projects" data-slide-to="2"></li>
+				  </ol>
+					-->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="carousel-item active">
+							<div class="card card-inverse card-success">
+								<a href="http://world.ac/2016" target="_blank">
+								<img class="img-fluid" src="img/world.ac-1.png" alt="Card image cap">
+								</a>
+								<div class="card-block">
+									<h2 class="card-title"><a href="http://world.ac" target="_blank">world.ac</a></h2>
+									<p>
+										The World Affairs Conference is the oldest student-led conference, but that doesn't mean we have to be behind the times. For WAC 2016, I developed the website, which included remaking the entire structure, content, and some server-side design.
+										</br>
+										</br>
+										For the next WAC, there's a lot of talk about online registration, as well as making the site more accessible and easy to read. It's a lot of work, but you can watch our progress on the website, as well as my <a href="http://twitter.com/malsf21">Twitter</a>.
+									</p>
+								</div>
+							</div>
+				    </div>
+				    <div class="carousel-item">
+							<div class="card card-inverse card-success">
+								<a href="http://robotics.ucc.on.ca" target="_blank">
+								<img class="img-fluid" src="img/robotics.ucc.on.ca-1.png" alt="Card image cap">
+								</a>
+								<div class="card-block">
+									<h1 class="card-title"><a href="http://robotics.ucc.on.ca" target="_blank">robotics.ucc.on.ca</a></h1>
+									<p>
+										It'd be nice if robots could build our website for us, but technology hasn't advanced <span style="font-style:italic;">that</span> far. In the meantime, I've developed the UCC Robotics Website, which features tons (and tonnes) of content, a user system that includes messaging, achievements, and attendance, and a dynamic content-delviery system, using alerts and bulletins.
+										</br>
+										</br>
+										Unfortunately, not all of those features are polished, and there's still a lot of work to do. You can track our progress on <a href="https://github.com/malsf21/robotics-club-website">the GitHub Repository</a>, and even contribute via <a href="https://github.com/malsf21/robotics-club-website/issues">issue tracking</a> or through <a href="https://github.com/malsf21/robotics-club-website/pulls">contributing code</a>.
+									</p>
+								</div>
+							</div>
+				    </div>
+				    <div class="carousel-item">
+							<div class="card card-inverse card-success">
+								<a href="http://pc.ucc.on.ca" target="_blank">
+								<img class="img-fluid" src="img/pc.ucc.on.ca-2.png">
+								</a>
+								<div class="card-block">
+									<h3 class="card-title"><a href="http://pc.ucc.on.ca" target="_blank">pc.ucc.on.ca</a></h3>
+									<p>
+										Much like Hogwarts, UCC features houses filled to the brim with competitive nature. Yet, there wasn't one centralized way to visualize that competitiveness: just a bunch of Google Spreadsheets, posted flyers, and assembly announcements about who won what. The Prefects Cup, in it's own way, tries to fix that. It features a centralized (albeit small) schedule bank, a list of all the organisers, and most importantly, an almost live-update of the position of each house.
+										</br>
+										</br>
+										Psssst. Go Orr's go!
+									</p>
+								</div>
+							</div>
+				    </div>
+				  </div>
+
+				  <a class="left carousel-control" href="#carousel-projects" role="button" data-slide="prev">
+				    <span class="icon-prev" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-projects" role="button" data-slide="next">
+				    <span class="icon-next" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+
+				</div>
+
+				<!--
 				<div class="card-deck-wrapper">
 				  <div class="card-deck link-normal">
 						<div class="card card-inverse card-success">
-							<a href="http://world.ac/2016">
+							<a href="http://world.ac/2016" target="_blank">
 							<img class="img-fluid" src="img/world.ac-1.png" alt="Card image cap">
 							</a>
 							<div class="card-block">
-								<h2 class="card-title"><a href="http://world.ac">world.ac</a></h2>
+								<h2 class="card-title"><a href="http://world.ac" target="_blank">world.ac</a></h2>
 								<p>
 									The World Affairs Conference is the oldest student-led conference, but that doesn't mean we have to be behind the times. For WAC 2016, I developed the website, which included remaking the entire structure, content, and some server-side design.
 									</br>
@@ -139,11 +217,11 @@
 							</div>
 						</div>
 						<div class="card card-inverse card-success">
-							<a href="http://robotics.ucc.on.ca">
+							<a href="http://robotics.ucc.on.ca" target="_blank">
 							<img class="img-fluid" src="img/robotics.ucc.on.ca-1.png" alt="Card image cap">
 							</a>
 							<div class="card-block">
-								<h1 class="card-title"><a href="http://robotics.ucc.on.ca">robotics.ucc.on.ca</a></h1>
+								<h1 class="card-title"><a href="http://robotics.ucc.on.ca" target="_blank">robotics.ucc.on.ca</a></h1>
 								<p>
 									It'd be nice if robots could build our website for us, but technology hasn't advanced <span style="font-style:italic;">that</span> far. In the meantime, I've developed the UCC Robotics Website, which features tons (and tonnes) of content, a user system that includes messaging, achievements, and attendance, and a dynamic content-delviery system, using alerts and bulletins.
 									</br>
@@ -153,11 +231,11 @@
 							</div>
 						</div>
 						<div class="card card-inverse card-success">
-							<a href="http://pc.ucc.on.ca">
+							<a href="http://pc.ucc.on.ca" target="_blank">
 							<img class="img-fluid" src="img/pc.ucc.on.ca-2.png">
 							</a>
 							<div class="card-block">
-								<h3 class="card-title"><a href="http://pc.ucc.on.ca">pc.ucc.on.ca</a></h3>
+								<h3 class="card-title"><a href="http://pc.ucc.on.ca" target="_blank">pc.ucc.on.ca</a></h3>
 								<p>
 									Much like Hogwarts, UCC features houses filled to the brim with competitive nature. Yet, there wasn't one centralized way to visualize that competitiveness: just a bunch of Google Spreadsheets, posted flyers, and assembly announcements about who won what. The Prefects Cup, in it's own way, tries to fix that. It features a centralized (albeit small) schedule bank, a list of all the organisers, and most importantly, an almost live-update of the position of each house.
 									</br>
@@ -167,7 +245,7 @@
 							</div>
 						</div>
 				  </div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		<div class="section" id="page-contact">
@@ -208,6 +286,9 @@
 				  </div>
 				</div>
 			</div>
+			</br>
+			</br>
+			</br>
 		</div>
 		<div class="footer bg-primary">
 			<div class="container-fluid" style="padding-left:20px;padding-right:20px;">
