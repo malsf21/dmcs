@@ -7,6 +7,11 @@ function httpGet(theUrl){
   xmlHttp.send( null );
   return xmlHttp.responseText;
 }
-var data = JSON.parse(httpGet("json.php?summonerid=65443758"));
-$("#test").html(data);
+var data = httpGet("json.php?summonerid=65443758");
+if (data != '{ "status": { "message": "Not Found", "status_code": 404 } }'){
+  console.log("Great success");
+}
+else{
+  console.log("Sadface.jpg");
+}
 </script>
