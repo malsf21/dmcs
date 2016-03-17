@@ -7,7 +7,7 @@ function httpGet(theUrl){
 var data = httpGet("json.php?summonerid=65443758");
 var jsonData = JSON.parse(data);
 var mattPlaying = false;
-if (jsonData["status"]["message"] == "Not Found"){
+if ("status" in jsonData){
   mattPlaying = false;
 }
 else{
