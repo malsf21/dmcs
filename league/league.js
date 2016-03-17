@@ -12,24 +12,28 @@ if ("status" in jsonData){
 }
 else{
   mattPlaying = true;
+  var mode = "Custom/Unidentified";
   type = jsonData["gameQueueConfigId"];
   if (type == 2){
-    var mode = "Blind Pick";
+    mode = "Blind Pick";
   }
   else if (type == 14){
-    var mode = "Normal Draft";
+    mode = "Normal Draft";
   }
   else if (type == 4){
-    var mode = "Ranked";
+    mode = "Ranked";
   }
   else if (type == 41){
-    var mode = "Ranked 3v3";
+    mode = "Ranked 3v3";
   }
   else if (type == 31 || type == 32 || type == 33){
-    var mode = "Bot";
+    mode = "Bot";
   }
-  else{
-    var mode = "Custom/Unidentified";
+  for (i = 0; i < jsonData["participants"].length; i++){
+    console.log(jsonData['participants'][i]["summonerId"]);
+    if (jsonData['participants'][i]["summonerId"] == 65443758){
+      var champid = jsonData['participants'][i]['championId'];
+    }
   }
-  console.log(mode);
+  console.log(champid);
 }
