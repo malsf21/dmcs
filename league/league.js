@@ -21,7 +21,7 @@ else{
     var mode = "Normal Draft";
   }
   else if (type == 4){
-    var mode = "Ranked Dynamic Queue";
+    var mode = "Ranked";
   }
   else if (type == 41){
     var mode = "Ranked 3v3";
@@ -30,7 +30,7 @@ else{
     var mode = "Bot";
   }
   else{
-    var mode = "Custom";
+    var mode = "Custom/Unidentified";
   }
   console.log(mode);
 }
