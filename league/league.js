@@ -32,5 +32,4 @@ else{
   else{
     var mode = "Custom/Unidentified";
   }
-  console.log(mode);
 }

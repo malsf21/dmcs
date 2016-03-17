@@ -29,7 +29,8 @@
 		<div class="container" style="padding-top:100px;">
 			<div class="jumbotron">
 				<h3>Want to know if Matt's playing league?</h3>
-				<h1 class="display-1"><span id="content"></span></h1>
+				<h1 class="display-1"><span id="answer"></span></h1>
+				<h3 id="info">He's playing this champion in a <span id="mode"> game.</h3>
 				<h2><span id="stream"></span> You can check out his stream on <a href="http://www.twitch.tv/malsf21">Twitch</a></h2>
 				<h4>He's malsf21 on the NA server. <a href="http://na.op.gg/summoner/userName=malsf21">Here's his op.gg</a></h4>
 			</div>
@@ -40,12 +41,13 @@
   <script src="../resources/bootstrap-4.0.0-alpha.2/js/bootstrap.js"></script>
 	<script type="text/javascript">
 		if (mattPlaying === true){
-			$("#content").html("Well he is.");
+			$("#answer").html("Well he is.");
 			$("#stream").html("In fact, he's probably streaming right now!");
-			console.log(mode);
+			$("mode").html(mode);
 		}
 		else{
-			$("#content").html("Well he ain't.");
+			$("#answer").html("Well he ain't.");
+			$("#info").hide();
 		}
 	</script>
 </html>
