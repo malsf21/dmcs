@@ -15,8 +15,8 @@ if ("status" in jsonData){
 }
 else{
 
-  var champ_data = httpGet("json.php?summonerid=65443758");
-  var champ_jsonData = JSON.parse(data);
+  var champ_data = httpGet("champ.php");
+  var champ_jsonData = JSON.parse(champ_data);
 
   mattPlaying = true;
   var mode = "Custom/Unidentified";
@@ -44,6 +44,6 @@ else{
       var champid = jsonData['participants'][i]['championId'];
     }
   }
-  var champ = champ_jsonData[String(champid)]["name"];
+  var champ = champ_jsonData["data"][String(champid)]["name"];
   console.log(champ);
 }
