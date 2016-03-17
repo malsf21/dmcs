@@ -13,7 +13,6 @@ if ("status" in jsonData){
 else{
   mattPlaying = true;
   type = jsonData["gameQueueConfigId"];
-  console.log(type);
   if (type == 2){
     var mode = "Blind Pick";
   }
@@ -32,4 +31,5 @@ else{
   else{
     var mode = "Custom/Unidentified";
   }
+  console.log(mode);
 }
