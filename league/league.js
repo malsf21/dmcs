@@ -1,6 +1,3 @@
-<span id="test"></span>
-<script src="js/jquery.min.js"></script>
-<script type="text/javascript">
 function httpGet(theUrl){
   var xmlHttp = new XMLHttpRequest();
   xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
@@ -8,13 +5,11 @@ function httpGet(theUrl){
   return xmlHttp.responseText;
 }
 var data = httpGet("json.php?summonerid=65443758");
-var jsonData = JSON.parse(data);
-console.log(data);
-console.log(jsonData);
+var jsonData = JSON.parse(data);]
+var mattPlaying = false;
 if (jsonData["status"]["message"] == "Not Found"){
-  console.log("Great success");
+  mattPlaying = false;
 }
 else{
-  console.log("Sadface.jpg");
+  mattPlaing = true;
 }
-</script>
