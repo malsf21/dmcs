@@ -8,5 +8,5 @@
   $info = curl_getinfo($ch);
   http_response_code($info["http_code"]);
   header("Access-Control-Allow-Origin: http://matthewwang.me");
-  print(json_encode($data));
+  print($data);
 ?>
