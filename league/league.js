@@ -5,11 +5,11 @@ function httpGet(theUrl){
   return xmlHttp.responseText;
 }
 var data = httpGet("json.php?summonerid=65443758");
-var jsonData = JSON.parse(data);]
+var jsonData = JSON.parse(data);
 var mattPlaying = false;
 if (jsonData["status"]["message"] == "Not Found"){
   mattPlaying = false;
 }
 else{
-  mattPlaing = true;
+  mattPlaying = true;
 }
