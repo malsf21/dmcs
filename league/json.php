@@ -1,5 +1,5 @@
 <?php
-  $apikey = "0e7fb11d-c84e-47e5-8900-d18e9615dd08";
+  $apikey = "";
   $summonerid = $_GET["summonerid"];
   $url = "https://na.api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/NA1/".$summonerid."?api_key=".$apikey;
   $ch = curl_init($url);
@@ -10,4 +10,3 @@
   header("Access-Control-Allow-Origin: http://matthewwang.me");
   print($data);
 ?>
-
