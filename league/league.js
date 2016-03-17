@@ -34,4 +34,5 @@ else{
   else{
     var mode = "Unidentified";
   }
+  console.log(mode);
 }
