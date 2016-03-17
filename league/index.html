@@ -27,8 +27,21 @@
   </head>
   <body>
 		<div class="container" style="padding-top:100px;">
+			<div class="jumbotron">
+				<h1 class="display-4">Want to know if Matt's playing league?</h1>
+				<span id="content"></span>
+			</div>
     </div>
   </body>
+	<script src="league.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="../resources/bootstrap-4.0.0-alpha.2/js/bootstrap.js"></script>
+	<script type="text/javascript">
+		if (mattPlaying === true){
+			$("#content").html("Why yes, he is.");
+		}
+		else{
+			$("#content").html("Nope, he ain't.");
+		}
+	</script>
 </html>
