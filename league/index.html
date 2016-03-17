@@ -1,3 +1,4 @@
+<span id="test"></span>
 <script src="js/jquery.min.js"></script>
 <script type="text/javascript">
 function httpGet(theUrl){
@@ -6,6 +7,6 @@ function httpGet(theUrl){
   xmlHttp.send( null );
   return xmlHttp.responseText;
 }
-var data = httpGet("json.php?summonerid=65443758");
-console.log(data);
+var data = JSON.parse(httpGet("json.php?summonerid=65443758"));
+$("#test").html(data)
 </script>
