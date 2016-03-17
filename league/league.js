@@ -13,6 +13,7 @@ if ("status" in jsonData){
 else{
   mattPlaying = true;
   type = jsonData["gameQueueConfigId"];
+  console.log(type);
   if (type == 0){
     var mode = "Custom";
   }
