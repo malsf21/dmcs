@@ -26,6 +26,9 @@ else{
   else if (type == 41){
     mode = "Ranked 3v3";
   }
+  else if (type == 65){
+    mode = "ARAM";
+  }
   else if (type == 31 || type == 32 || type == 33){
     mode = "Bot";
   }
