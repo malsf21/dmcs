@@ -44,6 +44,6 @@ else{
       var champid = jsonData['participants'][i]['championId'];
     }
   }
-  var champ = champ_jsonData["data"][String(champid)]["name"];
+  var champ = champ_jsonData[String(champid)]["name"];
   console.log(champ);
 }
