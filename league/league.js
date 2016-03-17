@@ -4,13 +4,20 @@ function httpGet(theUrl){
   xmlHttp.send( null );
   return xmlHttp.responseText;
 }
+
+
 var data = httpGet("json.php?summonerid=65443758");
 var jsonData = JSON.parse(data);
+
 var mattPlaying = false;
 if ("status" in jsonData){
   mattPlaying = false;
 }
 else{
+
+  var champ_data = httpGet("json.php?summonerid=65443758");
+  var champ_jsonData = JSON.parse(data);
+
   mattPlaying = true;
   var mode = "Custom/Unidentified";
   type = jsonData["gameQueueConfigId"];
@@ -33,10 +40,10 @@ else{
     mode = "Bot";
   }
   for (i = 0; i < jsonData["participants"].length; i++){
-    console.log(jsonData['participants'][i]["summonerId"]);
     if (jsonData['participants'][i]["summonerId"] == 65443758){
       var champid = jsonData['participants'][i]['championId'];
     }
   }
-  console.log(champid);
+  var champ = champ_jsonData["data"][String(champid)]["name"];
+  console.log(champ);
 }
