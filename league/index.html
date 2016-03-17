@@ -11,7 +11,7 @@ var data = httpGet("json.php?summonerid=65443758");
 var jsonData = JSON.parse(data);
 console.log(data);
 console.log(jsonData);
-if (jsonData[status]["message"] == "Not Found"){
+if (jsonData["status"]["message"] == "Not Found"){
   console.log("Great success");
 }
 else{
