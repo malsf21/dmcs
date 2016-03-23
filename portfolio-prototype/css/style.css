@@ -26,6 +26,7 @@ body {
 }
 .link-normal a{
 	color:inherit;
+	text-decoration: underline;
 }
 .carousel-control.left, .carousel-control.right {
 		background-image: none
