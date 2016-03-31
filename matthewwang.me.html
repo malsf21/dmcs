@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Matthew Wang</title>
-		<link rel="icon" href="dmcs/resources/favicon.ico" />
-    <link rel="stylesheet" href="dmcs/resources/bootstrap-4.0.0-alpha.2/css/bootstrap.css" />
-		<link rel="stylesheet" href="dmcs/resources/font-awesome-4.5.0/css/font-awesome.css" />
+		<link rel="icon" href="resources/favicon.ico" />
+    <link rel="stylesheet" href="resources/bootstrap-4.0.0-alpha.2/css/bootstrap.css" />
+		<link rel="stylesheet" href="resources/font-awesome-4.5.0/css/font-awesome.css" />
 		<style>
 			@font-face{
 				font-family:Nexa;
-				src:url(dmcs/resources/nexa/nexa_light.otf);
+				src:url(resources/nexa/nexa_light.otf);
 			}
 			@font-face{
 				font-family:Nexa;
 				font-weight:bold;
-				src:url(dmcs/resources/nexa/nexa_bold.otf);
+				src:url(resources/nexa/nexa_bold.otf);
 			}
 			body{
 				font-family:Nexa;
@@ -30,12 +30,47 @@
 		</style>
   </head>
   <body>
-		<div class="container" style="padding-top:100px;">
-	    <h2>Welcome to my domain.</h2>
-	    <h1 class="display-4">Directory for Matthew Wang's server.</h1>
+		<nav class="navbar navbar-light bg-faded">
+			<a class="navbar-brand" href="#">Directory</a>
+			<ul class="nav navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="portfolio">About Me</a>
+				</li>
+				<li class="nav-item dropdown">
+			    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">My Work</a>
+			    <div class="dropdown-menu">
+			      <a class="dropdown-item" href="http://world.ac">World Affairs Conference Website</a>
+			      <a class="dropdown-item" href="http://robotics.ucc.on.ca">UCC Robotics Club Website</a>
+			      <a class="dropdown-item" href="http://pc.ucc.on.ca">Prefects Cup Website</a>
+			    </div>
+			  </li>
+				<li class="nav-item dropdown">
+			    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">My Projects</a>
+			    <div class="dropdown-menu">
+			      <a class="dropdown-item" href="../blog/">Lowkey | My Blog</a>
+						<div class="dropdown-divider"></div>
+			      <a class="dropdown-item" href="../status">Status</a>
+			      <a class="dropdown-item" href="../ScrumHalf">Scrum Half</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="portfolio">Portfolio</a>
+			    </div>
+			  </li>
+				<li class="nav-item dropdown">
+			    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contact</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="mailto:malsf21@gmail.com"><span class="fa fa-envelope"></span> Email</a>
+			      <a class="dropdown-item" href="http://github.com/malsf21"><span class="fa fa-github"></span> GitHub</a>
+			      <a class="dropdown-item" href="http://twitter.com/malsf21"><span class="fa fa-twitter"></span> Twitter</a>
+			      <a class="dropdown-item" href="http://twitch.com/malsf21"><span class="fa fa-twitch"></span> Twitch</a>
+			    </div>
+			  </li>
+			</ul>
+		</nav>
+		<div class="container" style="padding-top:20px;">
 			<div class="jumbotron">
+				<h1>Welcome to my domain.</h1>
 				<p>
-					Hey there, looks like you've stumbled upon my website. If you want to, you can learn more about me on my <a href="portfolio">portfolio website</a>, or take a look at what else I fiddle with on here.
+					Hey there, looks like you've stumbled upon my directory website, where everything I do ends up coming back to. If you want to, you can learn more about me on my <a href="portfolio">portfolio website</a>, or take a look at what else I fiddle with on here.
 				</p>
 				<h1>Affiliated Projects</h1>
 				<ul class="directory-listing">
@@ -45,19 +80,19 @@
 				</ul>
 				<h1>Personal Projects</h1>
 				<ul class="directory-listing">
-					<li><h4><a href="blog/">Low Key: Matt's Blog</a> <span class="label label-pill label-success">Check me!</span></h4></li>
+					<li><h4><a href="../blog/">Lowkey: Matt's Blog</a> <span class="label label-pill label-success">Check me!</span></h4></li>
 					<li><h4><a href="portfolio">Personal Portfolio Website</a> <span class="label label-pill label-success">Check me!</span></h4></li>
-					<li><h4><a href="status/">Status</a> <span class="label label-pill label-warning">Experimental Project</span></h4></li>
-					<li><h4><a href="ScrumHalf/">Scrum Half Dev Game</a> <span class="label label-pill label-warning">Requires ECMA6</span></h4></li>
-					<li><h4><a href="awesome-suite-backend/">Awesome Suite Backend/Possible Website</a></h4></li>
+					<li><h4><a href="../status/">Status</a> <span class="label label-pill label-warning">Experimental Project</span></h4></li>
+					<li><h4><a href="../ScrumHalf/">Scrum Half Dev Game</a> <span class="label label-pill label-warning">Requires ECMA6</span></h4></li>
+					<li><h4><a href="../awesome-suite-backend/">Awesome Suite Backend/Possible Website</a></h4></li>
 					</br>
-					<li><h5><span class="fa fa-github"></span> <a href="http://github.com/malsf21">My GitHub Page</a></h5></li>
-					<li><h5><span class="fa fa-twitter"></span> <a href="https://twitter.com/malsf21">My Twitter</a></h5></li>
-					<li><h5><span class="fa fa-twitch"></span> <a href="https://twitch.com/malsf21">My Twitch</a></h5></li>
 				</ul>
+				<h5><span class="fa fa-github"></span> <a href="http://github.com/malsf21">My GitHub Page</a></h5>
+				<h5><span class="fa fa-twitter"></span> <a href="https://twitter.com/malsf21">My Twitter</a></h5>
+				<h5><span class="fa fa-twitch"></span> <a href="https://twitch.com/malsf21">My Twitch</a></h5>
 			</div>
 		</div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="dmcs/resources/bootstrap-4.0.0-alpha.2/js/bootstrap.js"></script>
+  <script src="resources/bootstrap-4.0.0-alpha.2/js/bootstrap.js"></script>
 </html>
