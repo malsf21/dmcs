@@ -1,0 +1,213 @@
+<html>
+  <head>
+    <title>Boooooooop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  </head>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Matthew Wang</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">A Simple Game <span class="sr-only">(current)</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <body>
+    <div class="container" style="text-align:center;">
+      <button class="btn btn-primary" onclick="startGame()">Start Game</button>
+      <h2>Score: <span id ="score">0</span></h2>
+      </br>
+      <canvas id="canvas" width="800" height="400">
+        Loading.
+      </canvas>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    function alert(text){
+      alert(text);
+    }
+    function replaceText(){
+      var ctx = document.getElementById("sometext");
+      ctx.innerHTML = "Donezos Manifesto."
+    }
+    function startGame(){
+      /*
+         index.html - draws a dot on the screen, credit to:
+         http://html5.litten.com/moving-shapes-on-the-html5-canvas-with-the-keyboard/
+      */
+      // Set some global variables
+      var canvas;
+      var ctx;
+      var dx = 5;
+      var dy = 5;
+      var x = 400;
+      var y = 300;
+      var xspeed = 0;
+      var yspeed = 0;
+      var ballr = 10;
+      var bluex = 0;
+      var bluey = 0;
+      var bluew = 0;
+      var blueh = 0;
+      var bluesize = 50;
+      var bluescore = 0;
+      var WIDTH = 800;
+      var HEIGHT = 400;
+      var bling = new Audio('bling.mp3');
+
+      function getRandomInt(min, max) {
+        //http://stackoverflow.com/questions/1527803/generating-random-numbers-in-javascript-in-a-specific-range
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      function circle(x,y,r) {
+      	ctx.beginPath();
+      	ctx.arc(x, y, r, 0, Math.PI*2, true);
+      	ctx.fill();
+      }
+
+      function rect(x,y,w,h) {
+      	ctx.beginPath();
+      	ctx.rect(x,y,w,h);
+      	ctx.closePath();
+      	ctx.fill();
+      	ctx.stroke();
+      }
+
+      function blueAssign(){
+        var rand = getRandomInt(1,5);
+        if (rand == 1){ //left wall
+          bluex = 0;
+          bluey = getRandomInt(50,350);
+          bluew = 5;
+          blueh = bluesize;
+        }
+        else if (rand == 2){ //top wall
+          bluex = getRandomInt(50,750);
+          bluey = 0;
+          bluew = bluesize;
+          blueh = 5;
+        }
+        else if (rand == 3){ //right wall
+          bluex = WIDTH-5;
+          bluey = getRandomInt(50,350);
+          bluew = 5;
+          blueh = bluesize;
+        }
+        else if (rand == 4){ //bottom wall
+          bluex = getRandomInt(50,750);
+          bluey = HEIGHT-5;
+          bluew = bluesize;
+          blueh = 5;
+        }
+      }
+
+      function score(){
+        bluescore += 1;
+        //console.log(bluescore);
+        $('#score').html(bluescore);
+        blueAssign();
+        bling.play();
+      }
+
+      function clear() {
+      	ctx.clearRect(0, 0, WIDTH, HEIGHT);
+      }
+
+      // Important starting function
+      function init() {
+      	canvas = document.getElementById("canvas");
+      	ctx = canvas.getContext("2d");
+        blueAssign();
+      	return setInterval(draw, 15); // this is key, tells draw function to fire 10x per second
+      }
+
+      function doKeyDown(evt){
+      	switch (evt.keyCode) {
+      		case 38:  /* Up arrow was pressed */
+      			yspeed = -5;
+            break;
+      		case 40:  /* Down arrow was pressed */
+      			yspeed = 5;
+      			break;
+      		case 37:  /* Left arrow was pressed */
+      			xspeed = -5;
+      			break;
+      		case 39:  /* Right arrow was pressed */
+        		xspeed = 5;
+      			break;
+          case 32:
+            xspeed = 0;
+            yspeed = 0;
+            break;
+      		}
+      }
+
+      function update(){
+        x += xspeed;
+        y += yspeed;
+        if (y - yspeed < 0){ // top of screen
+          y = (2*ballr);
+          yspeed = -yspeed;
+          if (x < bluex + bluesize && x > bluex && bluey == 0){
+            score();
+          }
+        }
+        else if (y + yspeed > HEIGHT){ // bottom of screen
+          y = HEIGHT-(2*ballr);
+          yspeed = -yspeed;
+          if (x < bluex + bluesize && x > bluex && bluey == HEIGHT-5){
+            score();
+          }
+          //console.log(yspeed);
+        }
+        if (x - xspeed < 0){ // left of screen
+          x = (2*ballr);
+          xspeed = -xspeed;
+          if (y < bluey + bluesize && y > bluey && bluex == 0){
+            score();
+          }
+          //console.log(xspeed);
+        }
+        else if (x + xspeed > WIDTH){ //right of screen
+          x = WIDTH-(2*ballr);
+          xspeed = -xspeed;
+          if (y < bluey + bluesize && y > bluey && bluex == WIDTH-5){
+            score();
+          }
+          //console.log(xspeed);
+        }
+      }
+
+      function draw() {
+      	clear();
+        update(xspeed, yspeed);
+        ctx.fillStyle = "white";
+      	ctx.strokeStyle = "black";
+      	rect(0,0,WIDTH,HEIGHT);
+        ctx.fillStyle = "blue";
+        rect(bluex,bluey,bluew, blueh);
+        ctx.fillStyle = "purple";
+      	circle(x, y, ballr);
+      }
+
+      // Main part of program
+      init();
+      window.addEventListener('keydown',doKeyDown,true);
+    }
+  </script>
+</html>
