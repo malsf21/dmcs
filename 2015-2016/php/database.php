@@ -15,7 +15,7 @@
 		$host = "localhost";
 		$user = "root";
 		$pass = "";
-		$db = "testdb";
+		$db = "compsci";
 
 		// open connection
 		$connection = mysql_connect($host, $user, $pass) or die ("Unable to connect!");
