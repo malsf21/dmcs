@@ -16,7 +16,7 @@
 		<div class="container" style="padding-top:30px;">
 			<div style="padding:20px;">
 		   	<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
-					<div class="row">
+					<div class="row" style="text-align:center;">
 						<div class="col-md-4">
 							<div class="row">
 								<div class="col-md-4">
@@ -67,7 +67,7 @@
 				if (mysql_num_rows($result) > 0) {
 
 		    		// print them one after another
-		    		echo "<table class='table table-striped table-bordered table-hover'>";
+		    		echo "<table class='table table-striped table-bordered table-hover' style='text-align:center;'>";
 						echo "<tbody>";
 		    		while($row = mysql_fetch_row($result)) {
 		        		echo "<tr>";
