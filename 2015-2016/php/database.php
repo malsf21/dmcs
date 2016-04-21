@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<div class="container" style="padding-top:30px;">
-			<div style="padding-top:20px;"
+			<div style="padding:20px;"
 		   	<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
 					<div class="row">
 						<div class="col-md-4">
