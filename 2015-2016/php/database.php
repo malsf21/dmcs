@@ -9,34 +9,36 @@
 		<link href="../../resources/bootstrap-4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" />
 	</head>
 	<body>
-		<div class="container">
-	   	<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="row">
-							<div class="col-md-4">
-					    	Country:
-							</div>
-							<div class="col-md-8">
-								<input class="form-control" type="text" name="country">
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="row">
-							<div class="col-md-4">
-					    	Animal
-							</div>
-							<div class="col-md-8">
-								<input class="form-control" type="text" name="animal">
+		<div class="container" style="padding-top:30px;">
+			<div style="padding-top:20px;"
+		   	<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-4">
+						    	Country:
+								</div>
+								<div class="col-md-8">
+									<input class="form-control" type="text" name="country">
+								</div>
 							</div>
 						</div>
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-4">
+						    	Animal
+								</div>
+								<div class="col-md-8">
+									<input class="form-control" type="text" name="animal">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<button class="btn btn-block btn-primary-outline" type="submit" name="submit">Submit</button>
+						</div>
 					</div>
-					<div class="col-md-4">
-						<button class="btn btn-block btn-primary-outline" type="submit" name="submit">Submit</button>
-					</div>
-				</div>
-	    </form>
+		    </form>
+			</div>
 			<div class="card">
 			<?php
 
