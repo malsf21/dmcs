@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<div class="container" style="padding-top:30px;">
-			<div style="padding:20px;"
+			<div style="padding:20px;">
 		   	<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
 					<div class="row">
 						<div class="col-md-4">
@@ -34,12 +34,11 @@
 							</div>
 						</div>
 						<div class="col-md-4">
-							<input class="btn btn-block btn-primary-outline" type="submit" name="submit">Submit</input>
+							<input class="btn btn-primary-outline" type="submit" name="submit"></input>
 						</div>
 					</div>
 		    </form>
 			</div>
-			<div class="card">
 			<?php
 
 				// set database server access variables:
@@ -121,7 +120,6 @@
 				mysql_close($connection);
 
 			?>
-		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 	<script src="../../resources/bootstrap-4.0.0-alpha.2/js/bootstrap.min.js"></script>
