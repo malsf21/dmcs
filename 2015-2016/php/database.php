@@ -34,7 +34,7 @@
 							</div>
 						</div>
 						<div class="col-md-4">
-							<button class="btn btn-block btn-primary-outline" type="submit" name="submit">Submit</button>
+							<input class="btn btn-block btn-primary-outline" type="submit" name="submit">Submit</input>
 						</div>
 					</div>
 		    </form>
