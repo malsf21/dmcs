@@ -1,14 +1,20 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="author" content="">
+		<title>Country - Animal Database</title>
+		<link href="../../resources/bootstrap-4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" />
+	</head>
 	<body>
-
-    <!-- This is the HTML form -->
-
    	<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
-    	Country: <input type="text" name="country">
-    	National animal: <input type="text" name="animal">
-    	<input type="submit" name="submit">
+    	Country: <input class="form-control" type="text" name="country">
+    	National animal: <input class="form-control" type="text" name="animal">
+    	<button class="btn btn-primary" type="submit" name="submit"></button>
     </form>
-
+		<div class="card">
 	<?php
 
 		// set database server access variables:
@@ -88,6 +94,7 @@
 		mysql_close($connection);
 
 	?>
-
+</div>
+	<script src="../../resources/bootstrap-4.0.0-alpha.2/js/bootstrap.min.js"></script>
 	</body>
 </html>
