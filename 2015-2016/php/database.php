@@ -9,6 +9,10 @@
 		<link href="../../resources/bootstrap-4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" />
 	</head>
 	<body>
+		<nav class="navbar navbar-light bg-faded">
+		  <h1 class="navbar-brand">Matthew Wang's Database Test</h1>
+			<a class="btn btn-success-outline pull-xs-right" href="http://matthewwang.me/" role="button">Visit My Site</a>
+		</nav>
 		<div class="container" style="padding-top:30px;">
 			<div style="padding:20px;">
 		   	<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
