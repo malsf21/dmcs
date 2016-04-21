@@ -76,10 +76,12 @@
 						echo "</tbody>";
 				    echo "</table>";
 
+						echo "<div class='alert alert-success' role='alert'><strong>Congrats!</strong> The table has been correctly been loaded.</div>"
+
 				} else {
 
 		    		// print status message
-		    		echo "No rows found!";
+		    		echo "<div class='alert alert-danger' role='alert'><strong>Oh snap!</strong> No rows were found.</div>"
 				}
 
 				// free result set memory
