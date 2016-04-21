@@ -12,14 +12,16 @@
 		<div class="container">
 	   	<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-4">
 			    	Country: <input class="form-control" type="text" name="country">
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-4">
 			    	National animal: <input class="form-control" type="text" name="animal">
 					</div>
+					<div class="col-md-4">
+						<button class="btn btn-block btn-primary-outline" type="submit" name="submit">Submit</button>
+					</div>
 				</div>
-	    	<button class="btn btn-primary" type="submit" name="submit">Submit</button>
 	    </form>
 			<div class="card">
 			<?php
@@ -46,7 +48,7 @@
 				if (mysql_num_rows($result) > 0) {
 
 		    		// print them one after another
-		    		echo "<table cellpadding=10 border=1>";
+		    		echo "<table class='table'>";
 		    		while($row = mysql_fetch_row($result)) {
 		        		echo "<tr>";
 						echo "<td>".$row[0]."</td>";
