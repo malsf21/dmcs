@@ -13,10 +13,24 @@
 	   	<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
 				<div class="row">
 					<div class="col-md-4">
-			    	Country: <input class="form-control" type="text" name="country">
+						<div class="row">
+							<div class="col-md-4">
+					    	Country:
+							</div>
+							<div class="col-md-8">
+								<input class="form-control" type="text" name="country">
+							</div>
+						</div>
 					</div>
 					<div class="col-md-4">
-			    	National animal: <input class="form-control" type="text" name="animal">
+						<div class="row">
+							<div class="col-md-4">
+					    	Animal
+							</div>
+							<div class="col-md-8">
+								<input class="form-control" type="text" name="animal">
+							</div>
+						</div>
 					</div>
 					<div class="col-md-4">
 						<button class="btn btn-block btn-primary-outline" type="submit" name="submit">Submit</button>
@@ -48,7 +62,8 @@
 				if (mysql_num_rows($result) > 0) {
 
 		    		// print them one after another
-		    		echo "<table class='table'>";
+		    		echo "<table class='table table-striped table-bordered table-hover'>";
+						echo "<tbody>";
 		    		while($row = mysql_fetch_row($result)) {
 		        		echo "<tr>";
 						echo "<td>".$row[0]."</td>";
@@ -57,6 +72,7 @@
 						echo "<td><a href=".$_SERVER['PHP_SELF']."?id=".$row[0].">Delete</a></td>";
 		        		echo "</tr>";
 		    		}
+						echo "</tbody>";
 				    echo "</table>";
 
 				} else {
