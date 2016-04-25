@@ -128,11 +128,10 @@
 	<body>
 		<nav class="navbar navbar-light bg-faded">
 		  <h1 class="navbar-brand">Welcome to TwitApp!</h1>
-			<form action="register.php" method="post"><button class="btn btn-danger-success pull-xs-right" >Register</button></form>
+			<form action="register.php" method="post"><button class="btn btn-success-outline pull-xs-right" >Register</button></form>
 		</nav>
     <div class="container" style="padding-top:30px;">
-      <h1 class="display-2">Login</h1>
-      <h4><a href="register.php">or register</a></h4>
+      <h1 class="display-2">Login <small><a href="register.php">or register here</a></small></h1>
       <form action="login.php" method="post">
         <div class="card">
           <div class="row">
