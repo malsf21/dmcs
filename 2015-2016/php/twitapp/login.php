@@ -124,20 +124,20 @@
 		</nav>
     <div class="container" style="padding-top:30px;">
       <h1 class="display-2">Login</h1>
-      <h4><a href="register.php">Register</a></h4>
+      <h4><a href="register.php">or register</a></h4>
       <form action="login.php" method="post">
-        <div class="row">
-          <div class="col-sm-4">
-            Username: <input type="text" name="username" value="<?php echo $submitted_username; ?>" />
+        <div class="card">
+          <div class="row">
+            <div class="col-sm-4">
+              Username: <input type="text" class="form-control" name="username" value="" />
+            </div>
+            <div class="col-sm-4">
+              Password: <input type="password" class="form-control" name="password" value="" />
+            </div>
           </div>
-          <div class="col-sm-4">
-            Password: <input type="password" name="password" value="" />
-          </div>
-          <div class="col-sm-4">
-            <input class="btn btn-primary-outline" type="submit" value="Login" />
-          </div>
-        </div>
-      </form>
+          <input class="btn btn-primary-outline" type="submit" value="Login" />
+        </form>
+      </div>
     </div>
   </body>
 </html>
