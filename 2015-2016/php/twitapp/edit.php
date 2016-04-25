@@ -16,7 +16,6 @@
 
 	// To access $_SESSION['user'] values put in an array, show user his username
 	$arr = array_values($_SESSION['user']);
-	echo "<h1 class='display-1'> Welcome " . $arr[2] . "</h1>";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,6 +33,35 @@
 			<form action="logout.php" method="post"><button class="btn btn-danger-outline pull-xs-right" >Log out</button></form>
 		</nav>
 		<div class="container" style="padding-top:30px;">
+			<div style="padding:20px;">
+		   	<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+					<div class="row" style="text-align:center;">
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-4">
+						    	Country:
+								</div>
+								<div class="col-md-8">
+									<input class="form-control" type="text" name="country">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-4">
+						    	Animal
+								</div>
+								<div class="col-md-8">
+									<input class="form-control" type="text" name="animal">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<input class="btn btn-primary-outline" type="submit" name="submit"></input>
+						</div>
+					</div>
+		    </form>
+			</div>
 		<?php
 			// open connection
 			$connection = mysql_connect($host, $username, $password) or die ("Unable to connect!");
@@ -110,37 +138,6 @@
 			mysql_close($connection);
 
 		?>
-
-    <!-- This is the HTML form that appears in the browser -->
-			<div style="padding:20px;">
-		   	<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
-					<div class="row" style="text-align:center;">
-						<div class="col-md-4">
-							<div class="row">
-								<div class="col-md-4">
-						    	Country:
-								</div>
-								<div class="col-md-8">
-									<input class="form-control" type="text" name="country">
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="row">
-								<div class="col-md-4">
-						    	Animal
-								</div>
-								<div class="col-md-8">
-									<input class="form-control" type="text" name="animal">
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<input class="btn btn-primary-outline" type="submit" name="submit"></input>
-						</div>
-					</div>
-		    </form>
-			</div>
 		</div>
 	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 	<script src="../../../resources/bootstrap-4.0.0-alpha.2/js/bootstrap.min.js"></script>
