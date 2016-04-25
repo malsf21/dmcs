@@ -9,7 +9,7 @@
 		<link href="../../../resources/bootstrap-4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" />
 	</head>
 	<body>
-
+	<div class="container" style="padding-top:30px;">
 	<?php
 
 	    // pass in some info;
@@ -29,7 +29,7 @@
 
 		// To access $_SESSION['user'] values put in an array, show user his username
 		$arr = array_values($_SESSION['user']);
-		echo "Welcome " . $arr[2];
+		echo "<h1 class='display-1'> Welcome " . $arr[2] . "</h1>";
 
 		// open connection
 		$connection = mysql_connect($host, $username, $password) or die ("Unable to connect!");
@@ -108,7 +108,6 @@
 	?>
 
     <!-- This is the HTML form that appears in the browser -->
-		<div class="container" style="padding-top:30px;">
 			<div style="padding:20px;">
 		   	<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
 					<div class="row" style="text-align:center;">
