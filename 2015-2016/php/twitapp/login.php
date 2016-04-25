@@ -116,6 +116,14 @@
 		<meta name="author" content="">
 		<title>Country - Animal Database</title>
 		<link href="../../../resources/bootstrap-4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+    .row{
+      padding: 10px;
+    }
+    .card{
+      padding: 10px;
+    }
+    </style>
 	</head>
 	<body>
 		<nav class="navbar navbar-light bg-faded">
