@@ -26,10 +26,45 @@
     <div class="container" style="padding-top:70px;">
       <div class="row">
         <div class="col-sm-8">
-          <h1 class="display-4">Hi <?php echo $user_username; ?>
+          <div class="alert alert-success alert-dismissable fade in" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span class="fa fa-close"></span>
+             </button>
+            Welcome back <strong><?php echo $user_username; ?></strong>! Here's your daily batch of honey.</a>.
+          </div>
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Matthew Wang <span class="text-muted">@malsf21</span></h4>
+              <p class="card-text">@hedgeriot I'm loving the functionality of @GitHub and @Atom combined together, you should try it #coding #compsci #webdesign</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Matthew Wang <span class="text-muted">@malsf21</span></h4>
+              <p class="card-text">@hedgeriot I'm loving the functionality of @GitHub and @Atom combined together, you should try it #coding #compsci #webdesign</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Matthew Wang <span class="text-muted">@malsf21</span></h4>
+              <p class="card-text">@hedgeriot I'm loving the functionality of @GitHub and @Atom combined together, you should try it #coding #compsci #webdesign</p>
+            </div>
+          </div>
         </div>
         <div class="col-sm-4">
-          <h4>Recent Buzzes</h4>
+          <div class="card">
+            <div class="card-block">
+              <h2 class="card-title">Recent Buzzes</h2>
+              <p class="card-text">
+                <ul class="list-unstyled">
+                  <li>#Bootstrap<li>
+                  <li>#TheBuzz<li>
+                  <li>#GitHub<li>
+                  <li>#Atom<li>
+                </ul>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
