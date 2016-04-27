@@ -34,6 +34,7 @@
 						<div class="col-sm-6">
 							<a class="btn btn-secondary btn-block" href="https://github.com/malsf21/dmcs/tree/master/2015-2016/php/thebuzz"><span class="fa fa-github"></span> View on GitHub</a>
 						</div>
+					</div>
         </div>
         <div class="col-sm-5">
           <h2><span class="fa fa-user-plus"></span> Register</h2>
