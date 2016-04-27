@@ -30,7 +30,7 @@
       </div>
       <?php } else{ ?>
         <li class="nav-item dropdown pull-xs-right">
-          <a class="dropdown-toggle btn btn-secondary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-user"></span> Hey <?php echo $arr[1]; ?>!</a>
+          <a class="dropdown-toggle btn btn-secondary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-user"></span> Hey <?php echo $user_username; ?>!</a>
           <div class="dropdown-menu" style="padding:5px;">
             <a class="dropdown-item" href="logout.php"><span class="fa fa-power-off"></span> Logout</a>
           </div>

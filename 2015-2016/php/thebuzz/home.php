@@ -5,6 +5,7 @@
 		die("Redirecting to index.php");
 	}
   $arr = array_values($_SESSION['user']);
+  $user_username = "@".$arr[1];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +26,7 @@
     <div class="container" style="padding-top:70px;">
       <div class="row">
         <div class="col-sm-8">
-          <h1 class="display-4">Hi <?php echo $arr[1]; ?>
+          <h1 class="display-4">Hi <?php echo $user_username; ?>
         </div>
         <div class="col-sm-4">
           <h4>Recent Buzzes</h4>
