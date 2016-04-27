@@ -208,24 +208,20 @@
 	<body>
 		<nav class="navbar navbar-light bg-faded">
 		  <h1 class="navbar-brand">Welcome to TwitApp!</h1>
-			<form action="register.php" method="post"><button class="btn btn-success-outline pull-xs-right" >Register</button></form>
+			<form action="login.php" method="post"><button class="btn btn-success-outline pull-xs-right" >Login</button></form>
 		</nav>
     <div class="container" style="padding-top:30px;">
       <h1>Register</h1>
       <form action="register.php" method="post">
         <div class="row">
           <div class="col-sm-4">
-            Username:<br />
-            <input type="text" name="username" value="" />
+            Username: <input class="form-control" type="text" name="username" value="" />
           </div>
           <div class="col-sm-4">
-            Email:<br />
-            <input type="text" name="email" value="" />
+            Email: <input class="form-control" type="text" name="email" value="" />
           </div>
           <div class="col-sm-4">
-            Password:<br />
-            <input type="password" name="password" value="" />
-            <br /><br />
+            Password: <input class="form-control" type="password" name="password" value="" />
           </div>
         </div>
         <input class="btn btn-primary-outline" type="submit" value="Register" />
