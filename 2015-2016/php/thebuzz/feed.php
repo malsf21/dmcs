@@ -2,7 +2,7 @@
   require("common.php");
 	function pull_posts(){
 		$query = "
-     SELECT * FROM `posts` WHERE 1
+     SELECT * FROM posts WHERE 1
     ";
 
 		// execute query
