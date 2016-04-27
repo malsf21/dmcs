@@ -55,7 +55,7 @@
           <h1 class="display-2"><b>the Buzz.</b></h1>
           <p>a social network designed for coders, designers, bugfixers, and everything in between</p>
 					<div class="row">
-						<div class="col-sm-9">
+						<div class="col-sm-8">
 							<div class="card">
 								<div class="card-block">
 									<h4 class="card-title">Matthew Wang <span class="text-muted">@malsf21</span></h4>
@@ -63,19 +63,19 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-3">
+						<div class="col-sm-4">
 							<div class="center-block">
-								<h2>Talk about things to people simply and quickly</h2>
+								<h4>Talk about things to people simply and quickly</h4>
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-3">
+						<div class="col-sm-4">
 							<div class="center-block">
-								<h2>Connect with other coders around the world</h2>
+								<h4>Connect with other coders around the world</h4>
 							</div>
 						</div>
-						<div class="col-sm-9">
+						<div class="col-sm-8">
 							<div class="card">
 								<div class="card-block">
 									<h4 class="card-title">John Mace <span class="text-muted">@hedgeriot</span></h4>
@@ -84,7 +84,7 @@
 							</div>
 							<div class="card">
 								<div class="card-block">
-									<p class="card-text text-muted"><span class="fa fa-reply"></span>in response to @hedgeriot</p>
+									<p class="card-text text-muted"><span class="fa fa-reply"></span> in response to @hedgeriot</p>
 									<h4 class="card-title">Matthew Wang <span class="text-muted">@malsf21</span></h4>
 							    <p class="card-text">Yeah man, it looks amazing! Props to @Bootstrap ! I'll probably use it in some of my #webdesign projects soon!</p>
 								</div>
