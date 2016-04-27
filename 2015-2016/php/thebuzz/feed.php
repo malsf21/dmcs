@@ -3,7 +3,7 @@
 		require("common.php");
 
 		$query = "
-     SELECT * FROM posts;
+     SELECT * FROM posts
     ";
 
 		// execute query
