@@ -9,12 +9,15 @@
 		<link href="../../../resources/bootstrap-4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../../../resources/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
     <style>
-    .row{
-      padding: 10px;
-    }
-    .card{
-      padding: 10px;
-    }
+			.nav > li.dropdown.open {
+			    position: static;
+			}
+			.nav > li.dropdown.open .dropdown-menu {
+			    display:table; width: 100%; text-align: center; left:0; right:0;
+			}
+			.dropdown-menu>li {
+			    display: table-cell;
+			}
     </style>
 	</head>
 	<body>
