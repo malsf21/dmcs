@@ -13,7 +13,7 @@
     </style>
 	</head>
 	<body>
-		<nav class="navbar navbar-light navbar-fixed-top bg-warning">
+		<nav class="navbar navbar-dark navbar-fixed-top bg-warning">
 		  <a class="navbar-brand hidden-sm-down" href="index.php"><span class="fa fa-forumbee"></span> The Buzz</a>
       <ul class="nav navbar-nav">
         <li class="nav-item">
@@ -29,7 +29,7 @@
 			  </li>
 				<div class="full-nav">
 	        <li class="nav-item dropdown pull-xs-right">
-				    <a class="dropdown-toggle btn btn-primary-outline" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Login</a>
+				    <a class="dropdown-toggle btn btn-secondary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Login to your Beehive</a>
 				    <div class="dropdown-menu">
 	            <form action="login.php" method="post">
 	              Username: <input type="text" class="form-control" name="username" value="" />
