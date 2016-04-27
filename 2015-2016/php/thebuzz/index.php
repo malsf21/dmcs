@@ -29,7 +29,7 @@
 			  </li>
 				<div class="full-nav">
 	        <li class="nav-item dropdown pull-xs-right">
-				    <a class="dropdown-toggle btn btn-secondary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Login to your Beehive</a>
+				    <a class="dropdown-toggle btn btn-secondary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-users" style="color:yellow;"></span> Login to your Beehive</a>
 				    <div class="dropdown-menu">
 	            <form action="login.php" method="post">
 	              Username: <input type="text" class="form-control" name="username" value="" />
