@@ -1,8 +1,10 @@
 <?php
 	function pull_posts(){
-		include_once("common.php");
+		require("common.php");
 
-		$query = "SELECT * FROM posts;";
+		$query = "
+     SELECT * FROM posts;
+    ";
 
 		// execute query
 		$result = mysql_query($query) or die ("Error in query: $query. ".mysql_error());
