@@ -58,16 +58,18 @@
           <h3>a social network dedicated to coders and bugfixers</h3>
         </div>
         <div class="col-sm-5">
-          <h2>Register</h2>
+          <h2><span class="fa fa-user-plus"></span> Register</h2>
           <form action="register.php" method="post">
             Username: <input class="form-control" type="text" name="username" value="" />
 						</br>
             Email: <input class="form-control" type="text" name="email" value="" />
 						</br>
             Password: <input class="form-control" type="password" name="password" value="" />
+						</br>
             <input class="btn btn-primary-outline" type="submit" value="Register" />
           </form>
-          <h2>or Login</h2>
+					<h4 style="text-align:center;">-- or, --</h4>
+          <h2><span class="fa fa-key"></span> Login</h2>
           <form action="login.php" method="post">
             <div class="row">
               <div class="col-sm-4">
@@ -76,8 +78,10 @@
               <div class="col-sm-4">
                 Password: <input type="password" class="form-control" name="password" value="" />
               </div>
+							<div class="col-sm-4">
+								<input class="btn btn-primary-outline" type="submit" value="Login" />
+							</div>
             </div>
-            <input class="btn btn-primary-outline" type="submit" value="Login" />
           </form>
         </div>
       </div>
