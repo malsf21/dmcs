@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -30,7 +33,7 @@
 				  </li>
 					<div class="full-nav">
 		        <li class="nav-item dropdown pull-xs-right">
-					    <a class="dropdown-toggle btn btn-secondary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-users"></span> Login to your Beehive</a>
+					    <a class="dropdown-toggle btn btn-secondary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-lock"></span> Login to your Beehive</a>
 					    <div class="dropdown-menu" style="padding:5px;">
 		            <form action="login.php" method="post">
 		              Email: <input type="text" class="form-control" name="email" value="" />
@@ -51,6 +54,43 @@
 					<h1>welcome to</h1>
           <h1 class="display-2"><b>the Buzz.</b></h1>
           <p>a social network designed for coders, designers, bugfixers, and everything in between</p>
+					<div class="row">
+						<div class="col-sm-9">
+							<div class="card">
+								<div class="card-block">
+									<h4 class="card-title">Matthew Wang <span class="text-muted">@malsf21</span></h4>
+							    <p class="card-text">@hedgeriot I'm loving the functionality of @GitHub and @Atom combined together, you should try it #coding #compsci #webdesign</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="center-block">
+								<h2>Talk about things to people simply and quickly</h2>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="center-block">
+								<h2>Connect with other coders around the world</h2>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class="card">
+								<div class="card-block">
+									<h4 class="card-title">John Mace <span class="text-muted">@hedgeriot</span></h4>
+							    <p class="card-text">Anybody seen the new @Bootstrap toolkit? #awesome</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-block">
+									<p class="card-text text-muted"><span class="fa fa-reply"></span>in response to @hedgeriot</p>
+									<h4 class="card-title">Matthew Wang <span class="text-muted">@malsf21</span></h4>
+							    <p class="card-text">Yeah man, it looks amazing! Props to @Bootstrap ! I'll probably use it in some of my #webdesign projects soon!</p>
+								</div>
+							</div>
+						</div>
+					</div>
         </div>
         <div class="col-sm-5">
           <h2><span class="fa fa-user-plus"></span> Register</h2>
