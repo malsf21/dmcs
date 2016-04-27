@@ -64,16 +64,16 @@
 							</div>
 						</div>
 						<div class="col-sm-4">
-							<div class="center-block">
+							<blockquote class="blockquote">
 								Talk about things to people simply and quickly
-							</div>
+							</blockquote>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-4">
-							<div class="center-block">
+							<blockquote class="blockquote blockquote-reverse">
 								Connect with other coders around the world
-							</div>
+							</blockquote>
 						</div>
 						<div class="col-sm-8">
 							<div class="card">
