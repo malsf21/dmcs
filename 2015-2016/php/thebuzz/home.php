@@ -37,11 +37,13 @@
               <div class="card-block">
                 <textarea class="form-control" id="submitTextarea" rows="3" placeholder="Give us your two cents!"></textarea>
               </div>
-              <div class="row">
-                <div class="col-sm-3 col-sm-offset-9">
-                  <input class="btn btn-block btn-primary" type="submit" value="Buzz" />
+              <p class="card-text">
+                <div class="row">
+                  <div class="col-sm-3 col-sm-offset-9">
+                    <input class="btn btn-block btn-primary" type="submit" value="Buzz" />
+                  </div>
                 </div>
-              </div>
+              </p>
             </form>
           </div>
           <div class="card">
