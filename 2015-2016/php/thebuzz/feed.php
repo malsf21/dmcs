@@ -6,6 +6,8 @@
     ";
 
 		// execute query
+    $result = mysql_query($query) or die ("Error in query: $query. ".mysql_error());
+    /*
     try
     {
         $stmt = $db->prepare($query);
@@ -14,7 +16,7 @@
     catch(PDOException $ex)
     {
         die("Failed to run query: " . $ex->getMessage());
-    }
+    }*/
 
 		$data = [];
 		while($row = mysql_fetch_row($result)) {
