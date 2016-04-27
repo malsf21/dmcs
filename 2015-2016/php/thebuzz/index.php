@@ -26,7 +26,14 @@
         <div class="col-sm-7">
 					<h1>welcome to:</h1>
           <h1 class="display-1"><b>The Buzz.</b></h1>
-          <h4>a social network designed for coders, designers, bugfixers, and everything in between</h4>
+          <h4>an open source social network designed for coders, designers, bugfixers, and everything in between</h4>
+					<div class="row">
+						<div class="col-sm-6">
+							<a class="btn btn-secondary btn-block" href="about.php"><span class="fa fa-book"></span> Learn about The Buzz</a>
+						</div>
+						<div class="col-sm-6">
+							<a class="btn btn-secondary btn-block" href="https://github.com/malsf21/dmcs/tree/master/2015-2016/php/thebuzz"><span class="fa fa-github"></span> View on GitHub</a>
+						</div>
         </div>
         <div class="col-sm-5">
           <h2><span class="fa fa-user-plus"></span> Register</h2>
@@ -39,6 +46,7 @@
 						</br>
             <input class="btn btn-primary-outline" type="submit" value="Register" />
           </form>
+					<!--
 					<h4 style="text-align:center;">or,</h4>
           <h2><span class="fa fa-key"></span> Login</h2>
           <form action="login.php" method="post">
@@ -53,6 +61,7 @@
 						</br>
 						<input class="btn btn-primary-outline" type="submit" value="Login" />
           </form>
+					-->
         </div>
       </div>
     </div>
