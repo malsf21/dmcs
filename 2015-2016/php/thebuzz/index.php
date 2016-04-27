@@ -9,15 +9,15 @@
 		<link href="../../../resources/bootstrap-4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../../../resources/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
     <style>
-		.nav > li.dropdown.open {
-		    position: static;
-		}
-		.nav > li.dropdown.open .dropdown-menu {
-		    display:table; width: 100%; text-align: right; left:0; right:0;
-		}
-		.dropdown-menu>li {
-		    display: table-cell;
-		}
+			.full-nav > li.dropdown.open {
+			    position: static;
+			}
+			.full-nav > li.dropdown.open .dropdown-menu {
+			    display:table; width: 100%; text-align: right; left:0; right:0;
+			}
+			.dropdown-menu>li {
+			    display: table-cell;
+			}
     </style>
 	</head>
 	<body>
@@ -35,27 +35,28 @@
             <a class="dropdown-item nav-link"><span class="fa fa-trophy"></span> Top</a>
 			    </div>
 			  </li>
-
-        <li class="nav-item dropdown pull-xs-right">
-			    <a class="dropdown-toggle btn btn-primary-outline" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Login</a>
-			    <div class="dropdown-menu">
-						<div class="container">
-	            <form action="login.php" method="post">
-	              <div class="row">
-	                <div class="col-sm-3 col-sm-offset-3">
-	                  <input type="text" class="form-control" name="username" value="" />
-	                </div>
-	                <div class="col-sm-4">
-	                  <input type="password" class="form-control" name="password" value="" />
-	                </div>
-									<div class="col-sm-2">
-										<input class="btn btn-block btn-primary-outline" type="submit" value="Login" />
-									</div>
-	              </div>
-	  			    </div>
-	          </form>
-					</div>
-			  </li>
+				<div class="full-nav">
+	        <li class="nav-item dropdown pull-xs-right">
+				    <a class="dropdown-toggle btn btn-primary-outline" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Login</a>
+				    <div class="dropdown-menu">
+							<div class="container">
+		            <form action="login.php" method="post">
+		              <div class="row">
+		                <div class="col-sm-3 col-sm-offset-3">
+		                  <input type="text" class="form-control" name="username" value="" />
+		                </div>
+		                <div class="col-sm-4">
+		                  <input type="password" class="form-control" name="password" value="" />
+		                </div>
+										<div class="col-sm-2">
+											<input class="btn btn-block btn-primary-outline" type="submit" value="Login" />
+										</div>
+		              </div>
+		  			    </div>
+		          </form>
+						</div>
+				  </li>
+				</div>
       </ul>
 		</nav>
     <div class="container" style="padding-top:70px;">
