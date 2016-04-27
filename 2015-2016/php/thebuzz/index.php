@@ -39,20 +39,22 @@
         <li class="nav-item dropdown pull-xs-right">
 			    <a class="dropdown-toggle btn btn-primary-outline" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Login</a>
 			    <div class="dropdown-menu">
-            <form action="login.php" method="post">
-              <div class="row">
-                <div class="col-sm-3 col-sm-offset-3">
-                  <input type="text" class="form-control" name="username" value="" />
-                </div>
-                <div class="col-sm-4">
-                  <input type="password" class="form-control" name="password" value="" />
-                </div>
-								<div class="col-sm-2">
-									<input class="btn btn-primary-outline" type="submit" value="Login" />
-								</div>
-              </div>
-  			    </div>
-          </form>
+						<div class="container">
+	            <form action="login.php" method="post">
+	              <div class="row">
+	                <div class="col-sm-3 col-sm-offset-3">
+	                  <input type="text" class="form-control" name="username" value="" />
+	                </div>
+	                <div class="col-sm-4">
+	                  <input type="password" class="form-control" name="password" value="" />
+	                </div>
+									<div class="col-sm-2">
+										<input class="btn btn-block btn-primary-outline" type="submit" value="Login" />
+									</div>
+	              </div>
+	  			    </div>
+	          </form>
+					</div>
 			  </li>
       </ul>
 		</nav>
