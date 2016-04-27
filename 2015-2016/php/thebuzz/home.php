@@ -25,7 +25,7 @@
     <div class="container" style="padding-top:70px;">
       <div class="row">
         <div class="col-sm-8">
-          <h1 class="display-4">Hi <?php echo $arr[2]; ?>
+          <h1 class="display-4">Hi <?php echo $arr[1]; ?>
         </div>
         <div class="col-sm-4">
           <h4>Recent Buzzes</h4>

@@ -30,9 +30,9 @@
       </div>
       <?php } else{ ?>
         <li class="nav-item dropdown pull-xs-right">
-          <a class="dropdown-toggle btn btn-secondary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-user"></span> Hey <?php echo $arr[2]; ?>!</a>
+          <a class="dropdown-toggle btn btn-secondary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-user"></span> Hey <?php echo $arr[1]; ?>!</a>
           <div class="dropdown-menu" style="padding:5px;">
-            <a href="logout.php"><a class="fa fa-power-off"></a> Logout</a>
+            <a href="logout.php"><span class="fa fa-power-off"></span> Logout</a>
           </div>
         </li>
       <?php } ?>
