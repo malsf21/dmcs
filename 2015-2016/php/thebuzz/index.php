@@ -65,14 +65,14 @@
 						</div>
 						<div class="col-sm-4">
 							<div class="center-block">
-								<h4>Talk about things to people simply and quickly</h4>
+								Talk about things to people simply and quickly
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-4">
 							<div class="center-block">
-								<h4>Connect with other coders around the world</h4>
+								Connect with other coders around the world
 							</div>
 						</div>
 						<div class="col-sm-8">
