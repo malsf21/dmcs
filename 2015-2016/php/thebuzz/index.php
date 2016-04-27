@@ -28,6 +28,7 @@
 			    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Discover</a>
 			    <div class="dropdown-menu">
 			      <a class="dropdown-item nav-link"><span class="fa fa-fire"></span> Hot</a>
+						<span></span>
             <a class="dropdown-item nav-link"><span class="fa fa-trophy"></span> Top</a>
 			    </div>
 			  </li>
@@ -54,22 +55,16 @@
       <div class="row">
         <div class="col-sm-7">
           <h1 class="display-2">Welcome to <b>the Buzz</b></h1>
-          <h3>a social network dedicated to insects</h3>
+          <h3>a social network dedicated to coders and bugfixers</h3>
         </div>
         <div class="col-sm-5">
           <h2>Register</h2>
           <form action="register.php" method="post">
-            <div class="row">
-              <div class="col-sm-4">
-                Username: <input class="form-control" type="text" name="username" value="" />
-              </div>
-              <div class="col-sm-4">
-                Email: <input class="form-control" type="text" name="email" value="" />
-              </div>
-              <div class="col-sm-4">
-                Password: <input class="form-control" type="password" name="password" value="" />
-              </div>
-            </div>
+            Username: <input class="form-control" type="text" name="username" value="" />
+						</br>
+            Email: <input class="form-control" type="text" name="email" value="" />
+						</br>
+            Password: <input class="form-control" type="password" name="password" value="" />
             <input class="btn btn-primary-outline" type="submit" value="Register" />
           </form>
           <h2>or Login</h2>
