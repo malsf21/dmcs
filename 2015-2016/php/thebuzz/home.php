@@ -33,13 +33,16 @@
             Welcome back <strong><?php echo $user_username; ?></strong>! Here's your latest honeycombs.
           </div>
           <div class="card card-inverse bg-warning">
-            <form action="register.php" method="post">
+            <form action="buzz.php" method="post">
               <div class="card-block">
-                <textarea class="form-control" id="submitTextarea" rows="3" placeholder="Give us your two cents!"></textarea>
-              </div>
-              <div class="row" style="padding:25px;">
-                <div class="col-sm-3 col-sm-offset-9">
-                  <input class="btn btn-block btn-primary" type="submit" value="Buzz" />
+                <div class="row">
+                  <div class="col-sm-9">
+                    <textarea class="form-control" id="submitTextarea" rows="3" placeholder="Give us your two cents!"></textarea>
+                  </div>
+                  <div class="col-sm-3">
+                    <input class="btn btn-block btn-primary" type="submit" value="Buzz" />
+                    <button class="btn btn-block btn-danger">Clear</button>
+                  </div>
                 </div>
               </div>
             </form>
