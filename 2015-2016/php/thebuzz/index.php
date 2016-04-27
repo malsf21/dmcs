@@ -21,7 +21,7 @@
     </style>
 	</head>
 	<body>
-		<nav class="navbar navbar-light navbar-fixed-top bg-info">
+		<nav class="navbar navbar-light navbar-fixed-top bg-warning">
 		  <a class="navbar-brand hidden-sm-down" href="index.php"><span class="fa fa-forumbee"></span> The Buzz</a>
       <ul class="nav navbar-nav">
         <li class="nav-item">
@@ -30,9 +30,9 @@
         <li class="nav-item dropdown">
 			    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Discover</a>
 			    <div class="dropdown-menu">
-			      <a class="dropdown-item nav-link"><span class="fa fa-fire"></span> Hot</a>
+			      <a class="dropdown-item nav-link"><span class="fa fa-fire" style="color:red;"></span> Hot</a>
 						<span></span>
-            <a class="dropdown-item nav-link"><span class="fa fa-trophy"></span> Top</a>
+            <a class="dropdown-item nav-link"><span class="fa fa-trophy" style="color:gold;"></span> Top</a>
 			    </div>
 			  </li>
 				<div class="full-nav">
