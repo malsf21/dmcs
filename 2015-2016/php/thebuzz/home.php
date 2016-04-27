@@ -4,6 +4,7 @@
 		header("Location: index.php");
 		die("Redirecting to index.php");
 	}
+  $arr = array_values($_SESSION['user']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +25,7 @@
     <div class="container" style="padding-top:70px;">
       <div class="row">
         <div class="col-sm-8">
-          <h1 class="display-4">Hi <?php echo $_SESSION['user']['name'] ?>
+          <h1 class="display-4">Hi <?php echo $arr[2]; ?>
         </div>
         <div class="col-sm-4">
           <h4>Recent Buzzes</h4>
