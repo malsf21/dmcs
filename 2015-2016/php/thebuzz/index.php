@@ -1,5 +1,5 @@
 <?php
-	require("functions/common.php");
+	require("common.php");
 	if(!(empty($_SESSION['user']))){
 		header("Location: home.php");
 		die("Redirecting to home.php");
