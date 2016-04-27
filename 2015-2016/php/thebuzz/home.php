@@ -32,6 +32,18 @@
              </button>
             Welcome back <strong><?php echo $user_username; ?></strong>! Here's your latest honeycombs.
           </div>
+          <div class="card card-inverse bg-warning">
+            <form action="register.php" method="post">
+              <div class="card-block">
+                <textarea class="form-control" id="submitTextarea" rows="3" placeholder="Give us your two cents!"></textarea>
+              </div>
+              <div class="row">
+                <div class="col-sm-3 col-sm-offset-9">
+                  <input class="btn btn-primary-outline" type="submit" value="Buzz" />
+                </div>
+              </div>
+            </form>
+          </div>
           <div class="card">
             <div class="card-block">
               <h4 class="card-title">Matthew Wang <span class="text-muted">@malsf21</span></h4>
