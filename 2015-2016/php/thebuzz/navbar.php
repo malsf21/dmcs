@@ -8,9 +8,9 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Discover</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item nav-link"><span class="fa fa-fire" style="color:red;"></span> Hot</a>
+          <a class="dropdown-item"><span class="fa fa-fire" style="color:red;"></span> Hot</a>
           <span></span>
-          <a class="dropdown-item nav-link"><span class="fa fa-trophy" style="color:gold;"></span> Top</a>
+          <a class="dropdown-item"><span class="fa fa-trophy" style="color:gold;"></span> Top</a>
         </div>
       </li>
       <?php if(empty($_SESSION['user'])){ ?>
@@ -32,7 +32,7 @@
         <li class="nav-item dropdown pull-xs-right">
           <a class="dropdown-toggle btn btn-secondary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-user"></span> Hey <?php echo $arr[1]; ?>!</a>
           <div class="dropdown-menu" style="padding:5px;">
-            <a href="logout.php"><span class="fa fa-power-off"></span> Logout</a>
+            <a class="dropdown-item" href="logout.php"><span class="fa fa-power-off"></span> Logout</a>
           </div>
         </li>
       <?php } ?>
