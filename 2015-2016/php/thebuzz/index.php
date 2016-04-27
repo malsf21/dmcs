@@ -27,43 +27,6 @@
 					<h1>welcome to:</h1>
           <h1 class="display-1"><b>The Buzz.</b></h1>
           <h4>a social network designed for coders, designers, bugfixers, and everything in between</h4>
-					<div class="row">
-						<div class="col-sm-8">
-							<div class="card">
-								<div class="card-block">
-									<h4 class="card-title">Matthew Wang <span class="text-muted">@malsf21</span></h4>
-							    <p class="card-text">@hedgeriot I'm loving the functionality of @GitHub and @Atom combined together, you should try it #coding #compsci #webdesign</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<blockquote class="blockquote">
-								Talk about things to people simply and quickly
-							</blockquote>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-4">
-							<blockquote class="blockquote blockquote-reverse">
-								Connect with other coders around the world
-							</blockquote>
-						</div>
-						<div class="col-sm-8">
-							<div class="card">
-								<div class="card-block">
-									<h4 class="card-title">John Mace <span class="text-muted">@hedgeriot</span></h4>
-							    <p class="card-text">Anybody seen the new @Bootstrap toolkit? #awesome</p>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-block">
-									<p class="card-text text-muted"><span class="fa fa-reply"></span> in response to @hedgeriot</p>
-									<h4 class="card-title">Matthew Wang <span class="text-muted">@malsf21</span></h4>
-							    <p class="card-text">Yeah man, it looks amazing! Props to @Bootstrap ! I'll probably use it in some of my #webdesign projects soon!</p>
-								</div>
-							</div>
-						</div>
-					</div>
         </div>
         <div class="col-sm-5">
           <h2><span class="fa fa-user-plus"></span> Register</h2>
