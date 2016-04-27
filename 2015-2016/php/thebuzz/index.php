@@ -41,13 +41,13 @@
 			    <div class="dropdown-menu">
             <form action="login.php" method="post">
               <div class="row">
-                <div class="col-sm-4">
-                  Username: <input type="text" class="form-control" name="username" value="" />
+                <div class="col-sm-3 col-sm-offset-3">
+                  <input type="text" class="form-control" name="username" value="" />
                 </div>
                 <div class="col-sm-4">
-                  Password: <input type="password" class="form-control" name="password" value="" />
+                  <input type="password" class="form-control" name="password" value="" />
                 </div>
-								<div class="col-sm-4">
+								<div class="col-sm-2">
 									<input class="btn btn-primary-outline" type="submit" value="Login" />
 								</div>
               </div>
