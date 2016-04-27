@@ -9,19 +9,13 @@
 		<link href="../../../resources/bootstrap-4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../../../resources/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
     <style>
-			.nav > li.dropdown.open {
-			    position: static;
-			}
-			.nav > li.dropdown.open .dropdown-menu {
-			    display:table; width: 100%; text-align: center; left:0; right:0;
-			}
-			.dropdown-menu>li {
-			    display: table-cell;
-			}
+		.dropdown-menu {
+			width: 100%;
+		}
     </style>
 	</head>
 	<body>
-		<nav class="navbar navbar-light navbar-fixed-top bg-faded">
+		<nav class="navbar navbar-light navbar-fixed-top bg-info">
 		  <a class="navbar-brand hidden-sm-down" href="index.php"><span class="fa fa-forumbee"></span> The Buzz</a>
       <ul class="nav navbar-nav">
         <li class="nav-item">
@@ -47,8 +41,10 @@
                 <div class="col-sm-4">
                   Password: <input type="password" class="form-control" name="password" value="" />
                 </div>
+								<div class="col-sm-4">
+									<input class="btn btn-primary-outline" type="submit" value="Login" />
+								</div>
               </div>
-              <input class="btn btn-primary-outline" type="submit" value="Login" />
   			    </div>
           </form>
 			  </li>
@@ -57,8 +53,9 @@
     <div class="container" style="padding-top:70px;">
       <div class="row">
         <div class="col-sm-7">
-          <h1 class="display-2">Welcome to <b>the Buzz</b></h1>
-          <h3>a social network dedicated to coders and bugfixers</h3>
+					<h1>welcome to</h1>
+          <h1 class="display-2"><b>the Buzz.</b></h1>
+          <p>a social network designed for coders, designers, bugfixers, and everything in between</p>
         </div>
         <div class="col-sm-5">
           <h2><span class="fa fa-user-plus"></span> Register</h2>
@@ -69,9 +66,9 @@
 						</br>
             Password: <input class="form-control" type="password" name="password" value="" />
 						</br>
-            <input class="btn btn-success-outline" type="submit" value="Register" />
+            <input class="btn btn-primary-outline" type="submit" value="Register" />
           </form>
-					<h4 style="text-align:center;">-- or, --</h4>
+					<h4 style="text-align:center;">or,</h4>
           <h2><span class="fa fa-key"></span> Login</h2>
           <form action="login.php" method="post">
             <div class="row">
@@ -82,7 +79,8 @@
                 Password: <input type="password" class="form-control" name="password" value="" />
               </div>
             </div>
-						<input class="btn btn-success-outline" type="submit" value="Login" />
+						</br>
+						<input class="btn btn-primary-outline" type="submit" value="Login" />
           </form>
         </div>
       </div>
