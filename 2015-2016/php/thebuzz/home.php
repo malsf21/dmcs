@@ -6,6 +6,7 @@
 	}
   $arr = array_values($_SESSION['user']);
   $user_username = "@".$arr[1];
+  $user_username = $_SESSION['user']['username'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
