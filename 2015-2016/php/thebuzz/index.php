@@ -66,22 +66,20 @@
 						</br>
             Password: <input class="form-control" type="password" name="password" value="" />
 						</br>
-            <input class="btn btn-primary-outline" type="submit" value="Register" />
+            <input class="btn btn-success-outline" type="submit" value="Register" />
           </form>
 					<h4 style="text-align:center;">-- or, --</h4>
           <h2><span class="fa fa-key"></span> Login</h2>
           <form action="login.php" method="post">
             <div class="row">
-              <div class="col-sm-4">
+              <div class="col-sm-6">
                 Username: <input type="text" class="form-control" name="username" value="" />
               </div>
-              <div class="col-sm-4">
+              <div class="col-sm-6">
                 Password: <input type="password" class="form-control" name="password" value="" />
               </div>
-							<div class="col-sm-4">
-								<input class="btn btn-primary-outline" type="submit" value="Login" />
-							</div>
             </div>
+						<input class="btn btn-success-outline" type="submit" value="Login" />
           </form>
         </div>
       </div>
