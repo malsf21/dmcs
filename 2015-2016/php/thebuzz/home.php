@@ -39,7 +39,7 @@
               </div>
               <div class="row">
                 <div class="col-sm-3 col-sm-offset-9">
-                  <input class="btn btn-primary-outline" type="submit" value="Buzz" />
+                  <input class="btn btn-block btn-primary" type="submit" value="Buzz" />
                 </div>
               </div>
             </form>
