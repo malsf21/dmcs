@@ -9,7 +9,7 @@
 		<link href="../../../resources/bootstrap-4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../../../resources/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
     <style>
-			.full-nav > li > .dropdown-menu { min-width: 300px;}
+			.full-nav > li > .dropdown-menu { min-width: 500px;}
     </style>
 	</head>
 	<body>
