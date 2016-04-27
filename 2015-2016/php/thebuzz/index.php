@@ -52,11 +52,11 @@
 		</nav>
     <div class="container" style="padding-top:30px;">
       <div class="row">
-        <div class="col-sm-5">
+        <div class="col-sm-7">
           <h1 class="display-2">Welcome to <b>the Buzz</b></h1>
-          <h3>a social network dedicated to coders</h3>
+          <h3>a social network dedicated to insects</h3>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-5">
           <h1>Register</h1>
           <form action="register.php" method="post">
             <div class="row">
@@ -83,8 +83,7 @@
               </div>
             </div>
             <input class="btn btn-primary-outline" type="submit" value="Login" />
-          </div>
-        </form>
+          </form>
         </div>
       </div>
     </div>
