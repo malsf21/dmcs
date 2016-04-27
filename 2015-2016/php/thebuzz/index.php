@@ -33,7 +33,7 @@
 					    <a class="dropdown-toggle btn btn-secondary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-users"></span> Login to your Beehive</a>
 					    <div class="dropdown-menu" style="padding:5px;">
 		            <form action="login.php" method="post">
-		              Username: <input type="text" class="form-control" name="username" value="" />
+		              Email: <input type="text" class="form-control" name="email" value="" />
 									</br>
 									Password: <input type="password" class="form-control" name="password" value="" />
 									</br>
@@ -68,7 +68,7 @@
           <form action="login.php" method="post">
             <div class="row">
               <div class="col-sm-6">
-                Username: <input type="text" class="form-control" name="username" value="" />
+                Email: <input type="text" class="form-control" name="email" value="" />
               </div>
               <div class="col-sm-6">
                 Password: <input type="password" class="form-control" name="password" value="" />
