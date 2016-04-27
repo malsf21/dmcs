@@ -50,14 +50,14 @@
 			  </li>
       </ul>
 		</nav>
-    <div class="container" style="padding-top:30px;">
+    <div class="container" style="padding-top:70px;">
       <div class="row">
         <div class="col-sm-7">
           <h1 class="display-2">Welcome to <b>the Buzz</b></h1>
           <h3>a social network dedicated to insects</h3>
         </div>
         <div class="col-sm-5">
-          <h1>Register</h1>
+          <h2>Register</h2>
           <form action="register.php" method="post">
             <div class="row">
               <div class="col-sm-4">
@@ -72,7 +72,7 @@
             </div>
             <input class="btn btn-primary-outline" type="submit" value="Register" />
           </form>
-          <h1>or Login</h1>
+          <h2>or Login</h2>
           <form action="login.php" method="post">
             <div class="row">
               <div class="col-sm-4">
