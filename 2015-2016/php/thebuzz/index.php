@@ -51,9 +51,9 @@
     <div class="container" style="padding-top:70px;">
       <div class="row">
         <div class="col-sm-7">
-					<h1>welcome to</h1>
-          <h1 class="display-2"><b>the Buzz.</b></h1>
-          <p>a social network designed for coders, designers, bugfixers, and everything in between</p>
+					<h1>welcome to:</h1>
+          <h1 class="display-1"><b>The Buzz.</b></h1>
+          <h4>a social network designed for coders, designers, bugfixers, and everything in between</h4>
 					<div class="row">
 						<div class="col-sm-8">
 							<div class="card">
