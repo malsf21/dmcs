@@ -4,9 +4,6 @@
 		header("Location: index.php");
 		die("Redirecting to index.php");
 	}
-  $arr = array_values($_SESSION['user']);
-  $user_username = "@".$arr[1];
-  $user_username = $_SESSION['user']['username'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,7 +28,7 @@
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span class="fa fa-close"></span>
              </button>
-            Welcome back <strong><?php echo $user_username; ?></strong>! Here's your latest honeycombs.
+            Welcome back <strong><?php echo $_SESSION['user']['username']; ?></strong>! Here's your latest honeycombs.
           </div>
           <div class="card card-inverse bg-warning">
             <form action="buzz.php" method="post">
