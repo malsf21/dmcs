@@ -30,7 +30,7 @@
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span class="fa fa-close"></span>
              </button>
-            Welcome back <strong><?php echo $user_username; ?></strong>! Here's your daily batch of honey.</a>.
+            Welcome back <strong><?php echo $user_username; ?></strong>! Here's your latest honeycombs.
           </div>
           <div class="card">
             <div class="card-block">
@@ -57,10 +57,10 @@
               <h2 class="card-title">Recent Buzzes</h2>
               <p class="card-text">
                 <ul class="list-unstyled">
-                  <li>#Bootstrap<li>
-                  <li>#TheBuzz<li>
-                  <li>#GitHub<li>
-                  <li>#Atom<li>
+                  <li><a href="#">#Bootstrap</a><li>
+                  <li><a href="#">#TheBuzz</a><li>
+                  <li><a href="#">#GitHub</a><li>
+                  <li><a href="#">#Atom</a><li>
                 </ul>
               </p>
             </div>
