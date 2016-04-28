@@ -34,7 +34,7 @@
 				xmlHttp.send( null );
 				return xmlHttp.responseText;
 			}
-			var feedData = JSON.parse(httpGet(feed.php));
+			var feedData = JSON.parse(httpGet("feed.php"));
 			console.log(feedData);
 		</script>
   </body>
