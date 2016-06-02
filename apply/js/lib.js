@@ -4,3 +4,21 @@ function httpGet(theUrl){
   xmlHttp.send( null );
   return xmlHttp.responseText;
 }
+function getCommitteeData(){
+  var committeeData = JSON.parse(httpGet("http://matthewwang.me/omun/api/committees.json"));
+  for (var key in committeeData){
+    if (key != "structure"){
+      $("#committees").append('<li class="table-view-cell media"><a class="navigate-right"><img class="media-object pull-left" src="' + committeeData[key]["image"] + '" height="42" width="42"><div class="media-body">' + committeeData[key]["name"] + '</div></a></li>');
+      /*
+      <li class="table-view-cell media">
+        <a class="navigate-right">
+          <img class="media-object pull-left" src="' + committeeData[key]["image"] + '" height="42" width="42">
+          <div class="media-body">
+            ' + committeeData[key]["name"] + '
+          </div>
+        </a>
+      </li>
+      */
+    }
+  }
+}
