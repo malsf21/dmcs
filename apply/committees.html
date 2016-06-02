@@ -68,6 +68,15 @@
         </li>
       </ul>
     </div>
-
+    <script>
+      function httpGet(theUrl){
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", theUrl, false );
+        xmlHttp.send( null );
+        return xmlHttp.responseText;
+      }
+      var committeeData = JSON.parse(httpGet("http://matthewwang.me/omun/api/committee.json/"));
+      console.log(committeeData);
+    </script>
   </body>
 </html>
