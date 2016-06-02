@@ -11,6 +11,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <script src="js/ratchet.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/lib.js"></script>
   </head>
   <body>
     <header class="bar bar-nav bar-nav-blue">
@@ -21,11 +23,11 @@
         <span class="icon fa fa-home"></span>
         <span class="tab-label">Home</span>
       </a>
-      <a class="tab-item" href="news.html">
+      <a class="tab-item" href="news.html" data-transition="fade">
         <span class="icon fa fa-newspaper-o"></span>
         <span class="tab-label">News</span>
       </a>
-      <a class="tab-item" href="schedule.html">
+      <a class="tab-item" href="schedule.html" data-transition="fade">
         <span class="icon fa fa-calendar"></span>
         <span class="tab-label">Schedule</span>
       </a>
@@ -44,14 +46,7 @@
 
       </ul>
     </div>
-    <script src="js/jquery.min.js"></script>
     <script>
-      function httpGet(theUrl){
-        var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open( "GET", theUrl, false );
-        xmlHttp.send( null );
-        return xmlHttp.responseText;
-      }
       function getCommitteeData(){
         var committeeData = JSON.parse(httpGet("http://matthewwang.me/omun/api/committees.json"));
         for (var key in committeeData){
