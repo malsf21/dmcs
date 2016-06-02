@@ -22,3 +22,21 @@ function getCommitteeData(){
     }
   }
 }
+
+var initializers = {
+    'Committees': function() {
+        getCommitteeData();
+    }
+};
+
+function initializePage(title) {
+    var func = initializers[title];
+    if(func) { func(); }
+}
+
+jQuery(document).ready(function($) {
+    window.addEventListener('push', function(e) {
+        initializePage(e.detail.state.title);
+    });
+    initializePage('{{ page.title }}');
+});
