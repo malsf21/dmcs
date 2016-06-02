@@ -37,8 +37,7 @@
     </nav>
 
     <div class="content">
-      <p class="content-padded">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet ornare tellus, vel pretium purus. Pellentesque volutpat a est a blandit. Curabitur volutpat erat quis ex facilisis, eget semper ipsum tincidunt. Proin varius euismod lorem, eget efficitur odio. Morbi vel mauris ac neque maximus rhoncus sit amet quis ipsum. Suspendisse cursus libero vitae tortor tincidunt posuere.</p>
-      <ul class="table-view">
+      <ul class="table-view" id="committees">
         <li class="table-view-cell media">
           <a class="navigate-right">
             <img class="media-object pull-left" src="http://placehold.it/42x42">
@@ -68,6 +67,7 @@
         </li>
       </ul>
     </div>
+    <script src="js/jquery.min.js"></script>
     <script>
       function httpGet(theUrl){
         var xmlHttp = new XMLHttpRequest();
@@ -77,6 +77,21 @@
       }
       var committeeData = JSON.parse(httpGet("http://matthewwang.me/omun/api/committees.json"));
       console.log(committeeData);
+      for (var key in committeeData){
+        $("#committees").append('<li class="table-view-cell media"><a class="navigate-right"><img class="media-object pull-left" src="' + committeeData[key]["image"] + '"><div class="media-body">' + committeeData[key]["name"] + '<p>' + committeeData[key]["shortbio"] + '</p></div></a></li>');
+        /*
+        <li class="table-view-cell media">
+          <a class="navigate-right">
+            <img class="media-object pull-left" src="' + committeeData[key]["image"] + '">
+            <div class="media-body">
+              ' + committeeData[key]["name"] + '
+              <p>' + committeeData[key]["shortbio"] + '</p>
+            </div>
+          </a>
+        </li>
+        */
+      }
+
     </script>
   </body>
 </html>
