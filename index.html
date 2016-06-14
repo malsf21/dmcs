@@ -40,6 +40,7 @@
 				<h3>Here, you can find links to my work, most of my personal projects, beta versions of organisational projects, my contact info, and a few fun little things sprinkled in between.</h3>
 				</br>
 				<a class="btn btn-primary" href="https://malsf21.github.io">My Portfolio</a>
+				<a class="btn btn-info" id="randomProject">Visit a Random Project</a>
 			</div>
 
 			<div class="card card-block">
@@ -68,7 +69,7 @@
 				      </h4>
 				    </div>
 				    <div id="collapse-official-omun" class="panel-collapse collapse" role="tabpanel">
-				      <a href="http://omun.ca">Ontario Model United Nations</a> is a Model-UN simulation held annually at Upper Canada College. As the Under-secretary General of Communications, that means my job is to manage social media, as well as the website, which you can check out <a href="http://omun.ca">here</a>.
+				      <a href="http://omun.ca">Ontario Model United Nations</a> is a Model-UN simulation held annually at Upper Canada College. As the Under-secretary General of Communications, that means my job is to manage social media, as well as the website and app development. You can check out <a href="http://omun.ca">our website</a>; progress on the app is coming soon.
 							</br>
 							</br>
 							If you want to know more about OMUN, you're free to contact me!
@@ -170,7 +171,7 @@
 				    <div class="panel-heading" role="tab">
 				      <h4 class="panel-title">
 				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-personal" href="#collapse-personal-as" aria-expanded="false" aria-controls="collapse-personal-as">
-									Awesome Suite<span class="label label-pill label-danger">On Hiatus</span>
+									Awesome Suite <span class="label label-pill label-danger">On Hiatus</span>
 				        </a>
 				      </h4>
 				    </div>
@@ -191,8 +192,54 @@
 				<h5><span class="fa fa-twitter"></span> <a href="https://twitter.com/malsf21">My Twitter</a></h5>
 				<h5><span class="fa fa-twitch"></span> <a href="https://twitch.com/malsf21">My Twitch</a></h5>
 			</div>
+			<iframe src="https://ghbtns.com/github-btn.html?user=malsf21&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="220px" height="30px"></iframe>
+			<iframe src="https://ghbtns.com/github-btn.html?user=malsf21&repo=dmcs&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
 		</div>
-  </body>
+	</body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="resources/bootstrap-4.0.0-alpha.2/js/bootstrap.js"></script>
+	<script>
+		var projects = [
+			{
+				"Name" : "World Affairs Conference",
+				"URL" : "https://github.com/malsf21/world.ac"
+			},
+			{
+				"Name" : "Prefects Cup",
+				"URL" : "https://github.com/malsf21/prefects-cup-website"
+			},
+			{
+				"Name" : "Ontario Model United Nations Website",
+				"URL" : "https://github.com/malsf21/omun.ca"
+			},
+			{
+				"Name" : "Ontario Model United Nations App",
+				"URL" : "https://github.com/malsf21/omun-app"
+			},
+			{
+				"Name" : "Status",
+				"URL" : "https://github.com/malsf21/status"
+			},
+			{
+				"Name" : "Lowkey: Matt's Blog",
+				"URL" : "https://github.com/malsf21/lowkey"
+			},
+			{
+				"Name" : "Ping",
+				"URL" : "https://github.com/malsf21/ping"
+			},
+			{
+				"Name" : "The Buzz",
+				"URL" : "https://github.com/FYCompsci/TwitHalf"
+			}
+		];
+		/*
+		{
+			"Name" : "",
+			"URL" : ""
+		}
+		*/
+		var randomProject = projects[Math.floor(Math.random() *projects.length)];
+		$("#randomProject").attr("href", randomProject["URL"]);
+	</script>
 </html>
