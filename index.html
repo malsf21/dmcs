@@ -43,7 +43,20 @@
 				<a class="btn btn-primary" href="http://blog.matthewwang.me">My Blog</a>
 				<a class="btn btn-info" id="randomProject">Visit a Random Project</a>
 			</div>
-
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="card card-block">
+						<h2><a href="http://www.twitch.tv/malsf21"><span class="fa fa-twitch" style="color:#6441A5;"></span></a> <span class="label" id="streaming"></span></h2>
+						<h4 id="stream_game"></h4>
+						<h6><a href="http://www.twitch.tv/malsf21" style="color:#6441A5;">Watch his stream @malsf21</a></h6>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="card card-block">
+						<h2>More info coming soon.</h2>
+					</div>
+				</div>
+			</div>
 			<div class="card card-block">
 				<h1>Official Projects <small>Click to expand</small></h1>
 				<div id="accordion-official" role="tablist" aria-multiselectable="true">
@@ -223,7 +236,20 @@
 	</body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="resources/bootstrap-4.0.0-alpha.2/js/bootstrap.js"></script>
+	<script src="resources/twitch-pull/twitch-pull.js"></script>
 	<script>
+		function twitchInfo(){
+			if (streaming === true){
+				$("#streaming").html("Matt is Live!");
+				$("#streaming").addClass("label-success");
+				$("#stream_game").html("playing <span class='label label-info'>" + stream_game + "</span>");
+			}
+			else{
+				$("#streaming").html("Matt is Offline");
+				$("#streaming").addClass("label-danger");
+			}
+		}
+		twitchFetch("malsf21");
 		var projects = [
 			{
 				"Name" : "World Affairs Conference",
