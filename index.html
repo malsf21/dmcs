@@ -30,6 +30,9 @@
 			.dropdown-item:hover{
 				color:black !important;
 			}
+			.label a{
+				color:white;
+			}
 		</style>
   </head>
   <body>
@@ -48,15 +51,25 @@
 					<div class="card card-block">
 						<h2><a href="http://www.twitch.tv/malsf21"><span class="fa fa-twitch" style="color:#6441A5;"></span></a> <span class="label" id="streaming"></span></h2>
 						<h4 id="stream_game"></h4>
-						<h6><a href="http://www.twitch.tv/malsf21" style="color:#6441A5;">Watch his stream @malsf21</a></h6>
+						<h6><a href="http://www.twitch.tv/malsf21" style="color:#6441A5;">Watch his stream <b>@malsf21</b></a></h6>
 					</div>
 				</div>
 				<div class="col-sm-6">
 					<div class="card card-block">
-						<h2>More info coming soon.</h2>
+						<h2><span class="fa fa-github"></span> <span class="label label-primary"><a href="http://github.com/malsf21">Matt was on GitHub</a></span></h2>
+						<h4>editing the <span class="label label-info" id="repo"></span></h4>
+						<h6 id="github_time"></h6>
 					</div>
 				</div>
 			</div>
+
+			<div class="card card-block">
+				<h1>Latest Blog Post</h1>
+				<h2><small>From Matt's Blog, <a href="http://blog.matthewwang.me/">Lowkey</a></small></h2>
+				<div id="blog-container">
+				</div>
+			</div>
+			
 			<div class="card card-block">
 				<h1>Official Projects <small>Click to expand</small></h1>
 				<div id="accordion-official" role="tablist" aria-multiselectable="true">
@@ -236,7 +249,8 @@
 	</body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="resources/bootstrap-4.0.0-alpha.2/js/bootstrap.js"></script>
-	<script src="resources/twitch-pull/twitch-pull.js"></script>
+	<script src="resources/status/twitch-pull.js"></script>
+	<script src="resources/status/github-pull.js"></script>
 	<script>
 		function twitchInfo(){
 			if (streaming === true){
@@ -247,9 +261,16 @@
 			else{
 				$("#streaming").html("Matt is Offline");
 				$("#streaming").addClass("label-danger");
+				$("#stream_game").html("<span class='label label-info'>not playing anything</span>");
 			}
 		}
+		function githubInfo(){
+			$("#repo").html("<a href='https://github.com/malsf21?tab=repositories'>" + github_repo + " repository</a>");
+			$("#github_time").html(github_time);
+		}
 		twitchFetch("malsf21");
+		githubFetch("malsf21");
+		$("#blog").load("blog/latest-preview.html #latest");
 		var projects = [
 			{
 				"Name" : "World Affairs Conference",
