@@ -41,7 +41,6 @@ print "Printing Answers..."
 with open('answers.csv', 'wb') as csvfile:
     writer = csv.writer(csvfile, delimiter=' ', quotechar='|', quoting=csv.QUOTE_MINIMAL)
     for i in range(len(answers)):
-        print answers[i]
         writer.writerow(answers[i][0])
 print " "
 print "Analyzing Data..."
