@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Matthew Wang</title>
+    <title>Matthew Wang's Domain</title>
 		<link rel="icon" href="resources/favicon.ico" />
-    <link rel="stylesheet" href="resources/bootstrap-4.0.0-alpha.3/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="resources/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="resources/bootstrap-4.0.0-alpha.4/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="resources/font-awesome/css/font-awesome.min.css" />
 		<style>
 			@font-face{
 				font-family:Nexa;
@@ -20,279 +20,57 @@
 			}
 			body{
 				font-family:Nexa;
+				padding-top: 50px;
 			}
 			h1, h2{
 				font-weight: bold;
 			}
 			.directory-listing{
-				list-style: none;
-			}
-			.dropdown-item:hover{
-				color:black !important;
-			}
-			.tag a{
-				color:white;
+				font-weight: bold;
+				font-size: 2em;
 			}
 		</style>
   </head>
   <body>
-		<div class="container" style="padding-top:30px;">
-			<div class="jumbotron">
-				<h1 class="display-2 hidden-sm-down">Welcome to my domain.</h1>
-				<h1 class="hidden-md-up">Welcome to Matt's domain.</h1>
-				<h2  class="hidden-sm-down">Matthew Wang's domain, to be exact <span class="tag tag-success">and now in HTTPS! <span class="fa fa-lock"></span></span></h2>
-				<h3 class="hidden-sm-down">Here, you can find links to my work, most of my personal projects, beta versions of organisational projects, my contact info, and a few fun little things sprinkled in between.</h3>
-				</br>
-				<a class="btn btn-primary" href="https://malsf21.github.io">My Portfolio</a>
-				<a class="btn btn-primary" href="http://blog.matthewwang.me">My Blog</a>
-				<a class="btn btn-info" id="randomProject">Visit a Random Project</a>
-			</div>
+		<div class="container">
+			<h1 class="text-xs-center">Matthew Wang</h1>
+			<h2 class="text-xs-center">and his domain</h2>
+			<p class="lead">
+				I'm currently tidying up this website. In the meantime, you can check out some of my stuff:
+			</p>
 			<div class="row">
 				<div class="col-sm-6">
 					<div class="card card-block">
-						<h2><a href="http://www.twitch.tv/malsf21"><span class="fa fa-twitch" style="color:#6441A5;"></span></a> <span class="tag" id="streaming"></span></h2>
-						<h4 id="stream_game"></h4>
-						<h6><a href="http://www.twitch.tv/malsf21" style="color:#6441A5;">Watch his stream <b>@malsf21</b></a></h6>
+						<h1>Quick Links</h1>
+						<ul class="list-unstyled directory-listing">
+							<li>
+								<a href="https://malsf21.github.io">My Portfolio</a>
+							</li>
+							<li>
+								<a href="http://blog.matthewwang.me">My Blog</a>
+							</li>
+							<li>
+								<a id="randomProject">Random Project</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<div class="col-sm-6">
 					<div class="card card-block">
-						<h2><span class="fa fa-github"></span> <span class="tag tag-primary"><a href="http://github.com/malsf21">Matt was on GitHub</a></span></h2>
-						<h4>editing the <span class="tag tag-info" id="repo"></span></h4>
-						<h6 id="github_time"></h6>
+						<h1>Contact Me</h1>
+						<h5><span class="fa fa-fw fa-envelope"></span> <a href="mailto:malsf21@gmail.com">My Email</a></h5>
+						<h5><span class="fa fa-fw fa-github"></span> <a href="http://github.com/malsf21">My GitHub</a></h5>
+						<h5><span class="fa fa-fw fa-spotify"></span> <a href="https://play.spotify.com/user/11156788800">My Spotify</a></h5>
+						<h5><span class="fa fa-fw fa-twitter"></span> <a href="https://twitter.com/malsf21">My Twitter</a></h5>
+						<h5><span class="fa fa-fw fa-twitch"></span> <a href="https://twitch.com/malsf21">My Twitch</a></h5>
 					</div>
 				</div>
 			</div>
-
-			<div class="card card-block">
-				<h1>Latest Blog Post <small>from Matt's Blog,</small> <span class="tag tag-info"><a href="http://blog.matthewwang.me/">Lowkey</a></span></h1>
-				<div id="blog-container">
-				</div>
-			</div>
-
-			<div class="card card-block">
-				<h1>Official Projects <small>Click to expand</small></h1>
-				<div id="accordion-official" role="tablist" aria-multiselectable="true">
-				  <div class="panel panel-default">
-				    <div class="panel-heading" role="tab">
-				      <h4 class="panel-title">
-				        <a data-toggle="collapse" data-parent="#accordion-official" href="#collapse-official-wac" aria-expanded="true" aria-controls="collapse-official-wac">
-				          World Affairs Conference
-				        </a><a href="https://github.com/malsf21/world.ac" style="color:inherit;"><span class="fa fa-github"></span> Website</a>
-				      </h4>
-				    </div>
-				    <div id="collapse-official-wac" class="panel-collapse collapse" role="tabpanel">
-				      I'm the Director of Registration and Media for the World Affairs Conference: that means that I've designed the <a href="https://world.ac">World Affairs Conference Website</a>, as well as the conference signage, packages, and other media. The World Affairs Conference is a student-run current affairs conference held at Upper Canada College.
-							</br>
-							</br>
-				    </div>
-				  </div>
-					<div class="panel panel-default">
-				    <div class="panel-heading" role="tab">
-				      <h4 class="panel-title">
-				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-official" href="#collapse-official-omun" aria-expanded="false" aria-controls="collapse-official-omun">
-				          Ontario Model United Nations <a href="https://github.com/malsf21/omun.ca" style="color:inherit;"><span class="fa fa-github"></span> Website</a> <a href="https://github.com/malsf21/omun-app" style="color:inherit;"><span class="fa fa-github"></span> App</a>
-				        </a>
-				      </h4>
-				    </div>
-				    <div id="collapse-official-omun" class="panel-collapse collapse" role="tabpanel">
-				      <a href="http://omun.ca">Ontario Model United Nations</a> is a Model-UN simulation held annually at Upper Canada College. As the Under-secretary General of Communications, that means my job is to manage social media, as well as the website and app development. You can check out <a href="http://omun.ca">our website</a>; progress on the app is coming soon.
-							</br>
-							</br>
-							If you want to know more about OMUN, you're free to contact me!
-				    </div>
-				  </div>
-				  <div class="panel panel-default">
-				    <div class="panel-heading" role="tab">
-				      <h4 class="panel-title">
-				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-official" href="#collapse-official-robo" aria-expanded="false" aria-controls="collapse-official-robo">
-				          UCC Robotics
-				        </a> <a href="https://github.com/malsf21/robotics-club-website" style="color:inherit;"><span class="fa fa-github"></span> Website</a>
-				      </h4>
-				    </div>
-				    <div id="collapse-official-robo" class="panel-collapse collapse" role="tabpanel">
-				      I'm the club head of UCC Robotics, and I've also designed the <a href="http://robotics.ucc.on.ca">UCC Robotics Website</a>. Visitors can learn about what our club is, and what it has to offer; in addition, club members can sign in to take attendance, as well as other small functions.
-							</br>
-							</br>
-				    </div>
-				  </div>
-				  <div class="panel panel-default">
-				    <div class="panel-heading" role="tab">
-				      <h4 class="panel-title">
-				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-official" href="#collapse-official-pc" aria-expanded="false" aria-controls="collapse-official-pc">
-				          UCC Prefects Cup
-				        </a> <a href="https://github.com/malsf21/prefects-cup-website" style="color:inherit;"><span class="fa fa-github"></span> Website</a>
-				      </h4>
-				    </div>
-				    <div id="collapse-official-pc" class="panel-collapse collapse" role="tabpanel">
-				      I'm the web designer for <a href="http://pc.ucc.on.ca">the Prefects Cup Website</a>, where UCC students can view live updates of the Prefects Cup standings, as well as upcoming events and schedules.
-							</br>
-							</br>
-				    </div>
-				  </div>
-					<div class="panel panel-default">
-				    <div class="panel-heading" role="tab">
-				      <h4 class="panel-title">
-				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-official" href="#collapse-official-foodspan" aria-expanded="false" aria-controls="collapse-official-foodspan">
-				          FoodSpan
-				        </a> <a href="https://github.com/FoodSpan" style="color:inherit;"><span class="fa fa-github"></span> Org</a> <a href="https://github.com/FoodSpan/foodspan-website" style="color:inherit;"><span class="fa fa-github"></span> Website</a> <a href="https://github.com/FoodSpan/webspan" style="color:inherit;"><span class="fa fa-github"></span> Web App</a> <a href="https://github.com/FoodSpan/foodspan-app" style="color:inherit;"><span class="fa fa-github"></span> Mobile App</a>
-				      </h4>
-				    </div>
-				    <div id="collapse-official-foodspan" class="panel-collapse collapse" role="tabpanel">
-							<b>FoodSpan</b> was the winning Design Entrepreneurship Project from SHAD @ Mac 2016, and I joined them for their competition at the John Dobson SHAD Entrepreneurship Cup in 2016. FoodSpan  As their director of technology and lead developer, I helped shape the <a href="https://github.com/FoodSpan/foodspan-website">FoodSpan Website</a>, <a href="https://github.com/FoodSpan/webspan/">Web Application</a>, <a href="https://github.com/FoodSpan/foodspan-app">Mobile Application</a>, and the general vision of the product.
-							</br>
-							</br>
-							The cup ain't over yet! In the meantime, you can browse <a href="https://foodspan.github.io">our website</a> to learn more about our product.
-							</br>
-							</br>
-				    </div>
-				  </div>
-					<div class="panel panel-default">
-				    <div class="panel-heading" role="tab">
-				      <h4 class="panel-title">
-				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-official" href="#collapse-official-greencrate" aria-expanded="false" aria-controls="collapse-official-greencrate">
-				          Greencrate
-				        </a> <a href="https://github.com/malsf21/greencrate" style="color:inherit;"><span class="fa fa-github"></span> Website</a>
-				      </h4>
-				    </div>
-				    <div id="collapse-official-greencrate" class="panel-collapse collapse" role="tabpanel">
-				    	At SHAD @ MAC 2016, <b>Greencrate</b> was one of the Design Entrepreneurship Projects I was involved in. It's a meal kit delivery service at its core, but a lot more than just that. You can find out more about it on the <a href="https://malsf21.github.io/greencrate/">Greencrate Website</a>.
-							</br>
-							</br>
-							Greencrate has finished its run, as SHAD is over. While there aren't any new developments, you're free to browse around.
-							</br>
-							</br>
-				    </div>
-				  </div>
-				</div>
-			</div>
-
-			<div class="card card-block">
-				<h1>Project Betas <small>Click to visit</small></h1>
-				<h4><a href="http://test.omun.ca">OMUN Website <span class="tag tag-pill tag-primary">Bleeding Edge</span></a> <a href="https://github.com/malsf21/omun.ca" style="color:inherit;"><span class="fa fa-github"></span></a></h4>
-				<h4><a href="http://matthewwang.me/wac/">WAC Website <span class="tag tag-pill tag-primary">Bleeding Edge</span></a> <a href="https://github.com/malsf21/world.ac" style="color:inherit;"><span class="fa fa-github"></span></a></h4>
-			</div>
-
-			<div class="card card-block">
-				<h1>Personal Projects <small>Click to expand</small></h1>
-				<div id="accordion-personal" role="tablist" aria-multiselectable="true">
-				  <div class="panel panel-default">
-				    <div class="panel-heading" role="tab">
-				      <h4 class="panel-title">
-				        <a data-toggle="collapse" data-parent="#accordion-personal" href="#collapse-personal-portfolio" aria-expanded="true" aria-controls="collapse-personal-portfolio">
-				          Portfolio
-				        </a> <a href="https://github.com/malsf21/malsf21.github.io" style="color:inherit;"><span class="fa fa-github"></span></a>
-				      </h4>
-				    </div>
-				    <div id="collapse-personal-portfolio" class="panel-collapse collapse" role="tabpanel">
-				      Plain and simple, my portfolio. It contains information about past work experience, projects, and work skills. You can view it <a href="http://malsf21.github.io">here</a>.
-							</br>
-							</br>
-				    </div>
-				  </div>
-				  <div class="panel panel-default">
-				    <div class="panel-heading" role="tab">
-				      <h4 class="panel-title">
-				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-personal" href="#collapse-personal-blog" aria-expanded="false" aria-controls="collapse-personal-blog">
-				          Lowkey
-				        </a> <a href="https://github.com/malsf21/lowkey" style="color:inherit;"><span class="fa fa-github"></span></a>
-				      </h4>
-				    </div>
-				    <div id="collapse-personal-blog" class="panel-collapse collapse" role="tabpanel">
-				      Lowkey is my blog. While I rarely end up using it, you can find random information about my life there. <a href="http://blog.matthewwang.me/">Here's the link</a>.
-							</br>
-							</br>
-				    </div>
-				  </div>
-					<div class="panel panel-default">
-				    <div class="panel-heading" role="tab">
-				      <h4 class="panel-title">
-				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-personal" href="#collapse-personal-status" aria-expanded="false" aria-controls="collapse-personal-status">
-				          Status <span class="tag tag-pill tag-warning">WIP</span>
-				        </a>  <a href="https://github.com/malsf21/status" style="color:inherit;"><span class="fa fa-github"></span></a>
-				      </h4>
-				    </div>
-				    <div id="collapse-personal-status" class="panel-collapse collapse" role="tabpanel">
-				    	<a href="http://matthewwang.me/status/">Status</a> is a small little web-app that lets you keep tabs on the status of people online, whether it be your favourite twitch streamer, or me! Right now, it's a huge Work In Progress, but you can see what I'm working on <a href="http://matthewwang.me/status/">here</a>.
-							</br>
-							</br>
-				    </div>
-				  </div>
-				  <div class="panel panel-default">
-				    <div class="panel-heading" role="tab">
-				      <h4 class="panel-title">
-				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-personal" href="#collapse-personal-buzz" aria-expanded="false" aria-controls="collapse-personal-buzz">
-				          The Buzz <span class="tag tag-pill tag-danger">On Hiatus</span>
-				        </a>  <a href="https://github.com/FYCompsci/TwitHalf" style="color:inherit;"><span class="fa fa-github"></span></a>
-				      </h4>
-				    </div>
-				    <div id="collapse-personal-buzz" class="panel-collapse collapse" role="tabpanel">
-				      While originally just supposed to be a quick social media website, <a href="http://matthewwang.me/thebuzz/">The Buzz</a> became much more. It's a twitter-esque social media site, with goofy features like randomly generated profile pictures, bee puns to put some honey on your day, and awesome users. You can register <a href="http://matthewwang.me/thebuzz/">here</a>, and find the GitHub repo <a href="https://github.com/FYCompsci/TwitHalf">here</a>.
-							</br>
-							</br>
-							Note: The Buzz is <i>on hiatus</i>, so I won't be updating any features any time soon.
-							</br>
-							</br>
-				    </div>
-				  </div>
-					<div class="panel panel-default">
-				    <div class="panel-heading" role="tab">
-				      <h4 class="panel-title">
-				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion-personal" href="#collapse-personal-as" aria-expanded="false" aria-controls="collapse-personal-as">
-									Awesome Suite <span class="tag tag-pill tag-danger">On Hiatus</span>
-				        </a>  <a href="https://github.com/malsf21/awesome-suite" style="color:inherit;"><span class="fa fa-github"></span></a>
-				      </h4>
-				    </div>
-				    <div id="collapse-personal-as" class="panel-collapse collapse" role="tabpanel">
-				      Awesome Suite is fun collection of tools that I made in <a href="http://electron.atom.io/">Electron</a>, just to test things out. It isn't professional, or even useful (save a few math tools), so I wouldn't say it's a must have. If you do want to check it out, you can download it <a href="https://github.com/malsf21/awesome-suite/releases">here</a>.
-							</br>
-							</br>
-							Note: Awesome Suite is <i>on hiatus</i>, so I won't be updating any features any time soon.
-							</br>
-							</br>
-				    </div>
-				  </div>
-				</div>
-			</div>
-			<div class="card card-block">
-				<h1>Contact Me</h1>
-				<h5><span class="fa fa-fw fa-envelope"></span> <a href="mailto:malsf21@gmail.com">My Email</a></h5>
-				<h5><span class="fa fa-fw fa-github"></span> <a href="http://github.com/malsf21">My GitHub</a></h5>
-				<h5><span class="fa fa-fw fa-spotify"></span> <a href="https://play.spotify.com/user/11156788800">My Spotify</a></h5>
-				<h5><span class="fa fa-fw fa-twitter"></span> <a href="https://twitter.com/malsf21">My Twitter</a></h5>
-				<h5><span class="fa fa-fw fa-twitch"></span> <a href="https://twitch.com/malsf21">My Twitch</a></h5>
-			</div>
-			<iframe src="https://ghbtns.com/github-btn.html?user=malsf21&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="220px" height="30px"></iframe>
-			<iframe src="https://ghbtns.com/github-btn.html?user=malsf21&repo=dmcs&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-			</br>
-			<a href="https://twitter.com/malsf21" class="twitter-follow-button" data-show-count="false">Follow @malsf21</a>
 		</div>
 	</body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <script src="resources/bootstrap-4.0.0-alpha.3/js/bootstrap.min.js"></script>
-	<script src="resources/status/twitch-pull.js"></script>
-	<script src="resources/status/github-pull.js"></script>
+  <script src="resources/jquery/jquery2.min.js"></script>
+  <script src="resources/bootstrap-4.0.0-alpha.4/js/bootstrap.min.js"></script>
 	<script>
-		function twitchInfo(){
-			if (streaming === true){
-				$("#streaming").html("Matt is Live!");
-				$("#streaming").addClass("tag-success");
-				$("#stream_game").html("playing <span class='tag tag-info'>" + stream_game + "</span>");
-			}
-			else{
-				$("#streaming").html("Matt is Offline");
-				$("#streaming").addClass("tag-danger");
-				$("#stream_game").html("<span class='tag tag-info'>not playing anything</span>");
-			}
-		}
-		function githubInfo(){
-			$("#repo").html("<a href='https://github.com/malsf21?tab=repositories'>" + github_repo + " repository</a>");
-			$("#github_time").html(github_time);
-		}
-		twitchFetch("malsf21");
-		githubFetch("malsf21");
-		$("#blog-container").load("blog/latest-preview.html #latest");
 		var projects = [
 			{
 				"Name" : "World Affairs Conference",
