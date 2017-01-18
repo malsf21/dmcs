@@ -1,37 +1,26 @@
 public class HiddenWord{
   private String name = "";
   public HiddenWord(){
-    name = "test";
+    name = "HARPS";
   }
   public HiddenWord(String hiddenWord){
     name = hiddenWord;
   }
-  public String getHiddenWord(){
-    return name;
-  }
   public String getHint(String hint){
-    String response = "";
     if (name.length() != hint.length()){
       return "Invalid Input";
     }
     else{
+      String response = "";
       for (int i = 0; i < hint.length(); i++){
-        if (String.valueOf(hint.charAt(i)).equals(String.valueOf(name.charAt(i)))){
-          response = response.concat(String.valueOf(hint.charAt(i)));
+        if(hint.substring(i,i+1).equals(name.substring(i, i+1))){
+          response += hint.substring(i,i+1);
+        }
+        else if (name.indexOf(hint.substring(i,i+1)) >= 0){
+          response += "+";
         }
         else{
-          int set = 0;
-          outerloop:
-          for (int j = 0; j < hint.length(); j++){
-            if (String.valueOf(hint.charAt(i)).equals(String.valueOf(name.charAt(j)))){
-              response = response.concat("+");
-              set = 1;
-              break outerloop;
-            }
-          }
-          if (set == 0){
-            response = response.concat("*");
-          }
+          response += "*";
         }
       }
       return response;
