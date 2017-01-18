@@ -1,3 +1,4 @@
 node/node_modules/
 react/react-tutorial/node_modules
 .DS_Store
+*.class
